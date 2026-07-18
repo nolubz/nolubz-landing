@@ -119,6 +119,41 @@
     .flinks{display:flex;gap:16px}.flinks a{font-size:12px;color:rgba(255,255,255,.18);text-decoration:none;transition:color .2s}.flinks a:hover{color:rgba(255,255,255,.56)}
     @media(max-width:900px){.nav-links,.nav-ghost{display:none}.hamburger{display:flex}.hero-inner{grid-template-columns:1fr}.types-grid{grid-template-columns:1fr}.group-inner{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr;gap:22px}}
     @media(max-width:600px){.fg{grid-template-columns:1fr}.fbot{flex-direction:column;align-items:flex-start}}
+  
+    /* ── FOOTER REDESIGN ── */
+    footer{background:#080E1A;padding:52px 5% 0}
+    .footer-main{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.07);align-items:start}
+    .footer-brand-col{}
+    .fb{display:flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:14px}
+    .fb img{width:30px;height:30px;object-fit:contain}
+    .fb-txt{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;color:#fff}
+    .fd{font-size:13px;color:rgba(255,255,255,.38);line-height:1.75;max-width:240px;margin-bottom:18px}
+    .fsoc{display:flex;gap:8px}
+    .fsoc a{width:32px;height:32px;border-radius:7px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:13px;text-decoration:none;color:rgba(255,255,255,.55);transition:background .2s,color .2s}
+    .fsoc a:hover{background:rgba(255,255,255,.12);color:#fff}
+    .footer-links-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+    .fcol h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,.82);letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px}
+    .fcol a{display:block;font-size:13px;color:rgba(255,255,255,.38);text-decoration:none;margin-bottom:9px;transition:color .2s}
+    .fcol a:hover{color:rgba(255,255,255,.82)}
+    .fbot{display:flex;align-items:center;justify-content:space-between;padding:18px 0;flex-wrap:wrap;gap:8px}
+    .fcp{font-size:12px;color:rgba(255,255,255,.22)}
+    .fnolz{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;color:#FCD34D;letter-spacing:2px;border:1px solid rgba(252,211,77,.26);padding:3px 8px;border-radius:5px}
+    /* mobile footer */
+    @media(max-width:700px){
+      .footer-main{grid-template-columns:1fr;gap:32px}
+      .footer-links-grid{grid-template-columns:1fr 1fr;gap:20px}
+      .fbot{flex-direction:column;align-items:flex-start;gap:8px}
+    }
+
+
+    /* ── NAV MOBILE FIX ── */
+    @media(max-width:900px){
+      .nav-cta{display:none !important}
+      .nav-ghost{display:none !important}
+      .nav-links{display:none !important}
+      .hamburger{display:flex !important}
+    }
+
   </style>
 </head>
 <body>
@@ -261,16 +296,49 @@
   </div>
 </section>
 
-<footer><div class="wrap">
-  <div class="fg">
-    <div><a href="../index.html" class="fb"><img src="../NLogo.png" alt="Nolubz" width="28" height="28"/><span class="fb-txt">Nolubz</span></a><p class="fd">Send, receive, save and secure — anywhere in the world.</p></div>
-    <div class="fcol"><h4>Products</h4><a href="wallet.html">NOLZ Wallet</a><a href="xecro.html">Xecro Escrow</a><a href="arqasave.html">ArqaSave</a><a href="bills.html">Bills & Airtime</a></div>
-    <div class="fcol"><h4>Platform</h4><a href="../countries.html">Countries</a><a href="../security.html">Security</a><a href="../faq.html">FAQ</a><a href="../about.html">About</a></div>
-    <div class="fcol"><h4>Company</h4><a href="../about.html">About Nolubz</a><a href="mailto:support@nolubz.com">Careers</a><a href="mailto:support@nolubz.com">Press</a></div>
-    <div class="fcol"><h4>Support</h4><a href="mailto:support@nolubz.com">Help Center</a><a href="mailto:support@nolubz.com">Contact</a><a href="mailto:support@nolubz.com">Privacy</a><a href="mailto:support@nolubz.com">Terms</a></div>
+<footer aria-label="Site footer">
+  <div class="wrap">
+    <div class="footer-main">
+      <div class="footer-brand-col">
+        <a href="../" class="fb" aria-label="Nolubz home">
+          <img src="../NLogo.png" alt="Nolubz" width="30" height="30" loading="lazy"/>
+          <span class="fb-txt">Nolubz</span>
+        </a>
+        <p class="fd">Send, receive, save and secure —<br>anywhere in the world.</p>
+        <div class="fsoc" aria-label="Social media">
+          <a href="https://x.com/nolubz" aria-label="X">𝕏</a>
+          <a href="https://linkedin.com/company/nolubz" aria-label="LinkedIn">in</a>
+          <a href="https://instagram.com/nolubz" aria-label="Instagram">ig</a>
+          <a href="https://t.me/nolubz" aria-label="Telegram">✈</a>
+        </div>
+      </div>
+      <div class="footer-links-grid">
+        <div class="fcol">
+          <h4>Products</h4>
+          <a href="../Products/wallet.html">NOLZ Wallet</a>
+          <a href="../Products/xecro.html">Xecro Escrow</a>
+          <a href="../Products/arqasave.html">ArqaSave</a>
+          <a href="../Products/bills.html">Bills & Airtime</a>
+        </div>
+        <div class="fcol">
+          <h4>Platform</h4>
+          <a href="../countries.html">Countries</a>
+          <a href="../security.html">Security</a>
+          <a href="../faq.html">FAQ</a>
+          <a href="../about.html">About</a>
+          <a href="mailto:support@nolubz.com">Contact</a>
+          <a href="mailto:support@nolubz.com">Privacy</a>
+          <a href="mailto:support@nolubz.com">Terms</a>
+        </div>
+      </div>
+    </div>
+    <div class="fbot">
+      <span class="fcp">© 2026 Nolubz. All rights reserved.</span>
+      <span class="fnolz">NOLZ</span>
+      <span class="fcp">support@nolubz.com</span>
+    </div>
   </div>
-  <div class="fbot"><span class="fcp">© 2026 Nolubz. All rights reserved.</span><span class="fnolz">NOLZ</span><div class="flinks"><a href="mailto:support@nolubz.com">Privacy</a><a href="mailto:support@nolubz.com">Terms</a><a href="mailto:support@nolubz.com">support@nolubz.com</a></div></div>
-</div></footer>
+</footer>
 <script>
   window.addEventListener('scroll',()=>document.getElementById('mainNav').classList.toggle('scrolled',scrollY>20),{passive:true});
   document.getElementById('menuBtn').onclick=()=>document.getElementById('mobMenu').classList.add('open');
