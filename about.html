@@ -7,7 +7,7 @@
   <meta name="keywords" content="about Nolubz, Nolubz mission, global fintech vision, financial inclusion, cross-border payments startup, global wallet company"/>
   <meta name="robots" content="index, follow"/><link rel="canonical" href="https://nolubz.com/about.html"/>
   <meta property="og:title" content="About Nolubz — Our Mission, Vision & Story"/><meta property="og:description" content="We are building the global financial platform for every person — regardless of where they are in the world."/><meta property="og:url" content="https://nolubz.com/about.html"/><meta property="og:image" content="https://nolubz.com/og-image.png"/>
-  <link rel="icon" type="image/png" href="NIcon.png"/><link rel="apple-touch-icon" href="NIcon.png"/><link rel="shortcut icon" href="NIcon.png"/>
+  <link rel="icon" type="image/png" href="NIcon.png?v=2"/><link rel="apple-touch-icon" href="NIcon.png?v=2"/><link rel="shortcut icon" href="NIcon.png?v=2"/>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230D47A1'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='900' font-size='38' fill='white'>N</text></svg>"/>
   <link rel="manifest" href="site.webmanifest"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -112,6 +112,10 @@
       .hamburger{display:flex !important}
     }
 
+      .fbot-links{display:flex;align-items:center;gap:10px}
+    .fbot-links a{font-size:12px;color:rgba(255,255,255,.32);text-decoration:none;transition:color .2s}
+    .fbot-links a:hover{color:rgba(255,255,255,.7)}
+    .fbot-sep{font-size:12px;color:rgba(255,255,255,.2)}
   </style>
 </head>
 <body>
@@ -241,16 +245,18 @@
           <a href="security.html">Security</a>
           <a href="faq.html">FAQ</a>
           <a href="about.html">About</a>
-          <a href="mailto:support@nolubz.com">Contact</a>
-          <a href="mailto:support@nolubz.com">Privacy</a>
-          <a href="mailto:support@nolubz.com">Terms</a>
+          
         </div>
       </div>
     </div>
     <div class="fbot">
       <span class="fcp">© 2026 Nolubz. All rights reserved.</span>
       <span class="fnolz">NOLZ</span>
-      <span class="fcp">support@nolubz.com</span>
+      <div class="fbot-links">
+        <a href="mailto:support@nolubz.com">Contact</a>
+        <span class="fbot-sep">·</span>
+        <a href="privacy.html">Privacy</a>
+      </div>
     </div>
   </div>
 </footer>

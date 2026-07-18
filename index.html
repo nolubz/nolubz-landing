@@ -30,10 +30,10 @@
   <meta name="twitter:image" content="https://nolubz.com/og-image.png"/>
 
   <!-- Favicon & Icons -->
-  <link rel="icon" type="image/png" sizes="32x32" href="NIcon.png"/>
-  <link rel="icon" type="image/png" sizes="16x16" href="NIcon.png"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="NIcon.png"/>
-  <link rel="shortcut icon" href="NIcon.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="NIcon.png?v=2"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="NIcon.png?v=2"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="NIcon.png?v=2"/>
+  <link rel="shortcut icon" href="NIcon.png?v=2"/>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230D47A1'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='900' font-size='38' fill='white'>N</text></svg>"/>
   <meta name="msapplication-TileColor" content="#0D47A1"/>
   <meta name="msapplication-TileImage" content="NLogo.png"/>
@@ -532,6 +532,10 @@
       .hamburger{display:flex !important}
     }
 
+      .fbot-links{display:flex;align-items:center;gap:10px}
+    .fbot-links a{font-size:12px;color:rgba(255,255,255,.32);text-decoration:none;transition:color .2s}
+    .fbot-links a:hover{color:rgba(255,255,255,.7)}
+    .fbot-sep{font-size:12px;color:rgba(255,255,255,.2)}
   </style>
 </head>
 <body>
@@ -958,16 +962,18 @@
           <a href="security.html">Security</a>
           <a href="faq.html">FAQ</a>
           <a href="about.html">About</a>
-          <a href="mailto:support@nolubz.com">Contact</a>
-          <a href="mailto:support@nolubz.com">Privacy</a>
-          <a href="mailto:support@nolubz.com">Terms</a>
+          
         </div>
       </div>
     </div>
     <div class="fbot">
       <span class="fcp">© 2026 Nolubz. All rights reserved.</span>
       <span class="fnolz">NOLZ</span>
-      <span class="fcp">support@nolubz.com</span>
+      <div class="fbot-links">
+        <a href="mailto:support@nolubz.com">Contact</a>
+        <span class="fbot-sep">·</span>
+        <a href="privacy.html">Privacy</a>
+      </div>
     </div>
   </div>
 </footer>
