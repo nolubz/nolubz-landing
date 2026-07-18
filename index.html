@@ -439,6 +439,46 @@
     .flinks a{font-size:12px;color:rgba(255,255,255,.2);text-decoration:none;transition:color .2s}
     .flinks a:hover{color:rgba(255,255,255,.58)}
 
+    /* DOWNLOAD APP */
+    .download-app{padding:92px 5%;background:linear-gradient(135deg,#080E1A 0%,#0D2B6B 100%);position:relative;overflow:hidden}
+    .download-app::before{content:'';position:absolute;width:600px;height:600px;top:-200px;right:-100px;background:radial-gradient(ellipse,rgba(33,150,243,.15) 0%,transparent 70%);pointer-events:none}
+    .dl-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
+    .dl-h{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(28px,3.5vw,48px);font-weight:800;color:#fff;line-height:1.1;letter-spacing:-1px;margin:14px 0 18px}
+    .dl-sub{font-size:clamp(14px,1.3vw,16px);color:rgba(255,255,255,.55);line-height:1.8;margin-bottom:36px;max-width:460px}
+    .dl-buttons{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:20px}
+    .dl-btn{display:inline-flex;align-items:center;gap:14px;padding:14px 24px;border-radius:14px;text-decoration:none;transition:transform .15s,box-shadow .15s;min-width:180px}
+    .dl-android{background:#1a1a2e;border:1.5px solid rgba(255,255,255,.15)}
+    .dl-android:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3);border-color:rgba(255,255,255,.3)}
+    .dl-ios{background:#1a1a2e;border:1.5px solid rgba(255,255,255,.15)}
+    .dl-ios:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3);border-color:rgba(255,255,255,.3)}
+    .dl-btn-text{display:flex;flex-direction:column}
+    .dl-btn-sub{font-size:11px;color:rgba(255,255,255,.5);font-weight:500}
+    .dl-btn-main{font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;color:#fff;line-height:1.2}
+    .dl-note{font-size:12px;color:rgba(255,255,255,.28)}
+    /* Phone mockup */
+    .dl-visual{display:flex;align-items:center;justify-content:center;position:relative}
+    .dl-glow{position:absolute;width:300px;height:300px;background:radial-gradient(ellipse,rgba(33,150,243,.25) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0}
+    .dl-phone{background:linear-gradient(160deg,#1a1a2e,#0D2B6B);border:2px solid rgba(255,255,255,.12);border-radius:36px;padding:20px 16px;width:240px;box-shadow:0 32px 64px rgba(0,0,0,.4);position:relative;z-index:1;animation:float 4s ease-in-out infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+    .dl-phone-screen{border-radius:24px;overflow:hidden;background:#0A1628}
+    .dl-screen-header{display:flex;align-items:center;justify-content:space-between;padding:14px 14px 8px;background:#0D1F3C}
+    .dl-screen-logo{display:flex;align-items:center;gap:7px;font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:800;color:#fff}
+    .dl-screen-notif{font-size:16px}
+    .dl-screen-balance{background:linear-gradient(135deg,#0D47A1,#1565C0);padding:16px 14px;text-align:center}
+    .dl-bal-label{font-size:10px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+    .dl-bal-amount{font-family:'Plus Jakarta Sans',sans-serif;font-size:28px;font-weight:800;color:#fff;line-height:1}
+    .dl-bal-nolz{font-size:9px;color:rgba(255,255,255,.4);margin-top:4px}
+    .dl-screen-actions{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:12px 8px;background:#0D1F3C}
+    .dl-action{display:flex;flex-direction:column;align-items:center;gap:5px;cursor:default}
+    .dl-action span{font-size:9px;color:rgba(255,255,255,.55);font-weight:500}
+    .dl-screen-tx{padding:10px 14px 14px;background:#0A1628}
+    .dl-tx-title{font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:8px}
+    .dl-tx-item{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+    .dl-tx-ico{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0}
+    .dl-tx-name{font-size:11px;font-weight:600;color:rgba(255,255,255,.78)}
+    .dl-tx-time{font-size:9px;color:rgba(255,255,255,.3)}
+    .dl-tx-amt{font-size:12px;font-weight:700;margin-left:auto}
+
     /* RESPONSIVE */
     @media(max-width:900px){
       .nav-links,.nav-ghost{display:none}
@@ -447,6 +487,8 @@
       .fg{grid-template-columns:1fr 1fr;gap:24px}
       .hero-cards{flex-direction:column;align-items:center}
       .hcard{min-width:auto;width:100%;max-width:300px}
+      .dl-inner{grid-template-columns:1fr}
+      .dl-visual{margin-top:32px}
     }
     @media(max-width:600px){
       .wbox{padding:40px 22px}
@@ -486,6 +528,10 @@
   </div>
   <div class="nav-actions">
     <a href="faq.html" class="nav-ghost">FAQ</a>
+    <a href="#download" class="nav-ghost" style="display:flex;align-items:center;gap:6px;">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 16l-6-6h4V4h4v6h4l-6 6z" fill="currentColor"/><path d="M20 18H4v2h16v-2z" fill="currentColor"/></svg>
+      Get App
+    </a>
     <a href="#waitlist" class="nav-cta">Join Waitlist</a>
     <div class="hamburger" id="menuBtn" aria-label="Open menu" role="button" tabindex="0">
       <span></span><span></span><span></span>
@@ -786,6 +832,66 @@
   </div>
 </section>
 
+<!-- DOWNLOAD APP SECTION -->
+<section class="download-app" id="download" aria-labelledby="dl-h">
+  <div class="wrap">
+    <div class="dl-inner reveal">
+      <div class="dl-content">
+        <div class="eyebrow ew" style="justify-content:center;">Get the app</div>
+        <h2 class="dl-h" id="dl-h">The full Nolubz experience<br>is in your pocket.</h2>
+        <p class="dl-sub">Everything on this website — and more. Send money, save, protect deals with Xecro, pay bills and manage your finances from the most powerful global wallet app ever built.</p>
+        <div class="dl-buttons">
+          <a href="https://play.google.com/store/apps/details?id=com.nolubz.app" class="dl-btn dl-android" target="_blank" rel="noopener" aria-label="Download Nolubz on Google Play">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.18 23.5c.34.19.72.25 1.09.19L15.5 12 4.27.31A1.83 1.83 0 003.18.5C2.46.91 2 1.7 2 2.56v18.88c0 .86.46 1.65 1.18 2.06z" fill="white"/><path d="M19.5 10.13l-2.96-1.7L13.5 12l3.04 3.57 2.96-1.7c.9-.52.9-1.82 0-2.34v-.4z" fill="white" opacity=".8"/><path d="M4.27.31L15.5 12 4.27 23.69l-.81.81c.07.01.14.01.21 0L16.54 16l-12.27-15.69z" fill="white" opacity=".6"/></svg>
+            <div class="dl-btn-text">
+              <span class="dl-btn-sub">Get it on</span>
+              <span class="dl-btn-main">Google Play</span>
+            </div>
+          </a>
+          <a href="https://apps.apple.com/app/nolubz/id0000000000" class="dl-btn dl-ios" target="_blank" rel="noopener" aria-label="Download Nolubz on the App Store">
+            <svg width="22" height="26" viewBox="0 0 22 26" fill="none" aria-hidden="true"><path d="M18.07 13.72c-.03-3.26 2.66-4.84 2.78-4.91-1.52-2.22-3.88-2.52-4.71-2.55-2-.21-3.93 1.18-4.95 1.18-1.03 0-2.6-1.16-4.28-1.13C4.7 6.35 2.6 7.5 1.44 9.38c-2.34 4.05-.6 10.03 1.67 13.31 1.12 1.61 2.44 3.41 4.17 3.35 1.68-.07 2.31-1.08 4.34-1.08 2.02 0 2.59 1.08 4.36 1.05 1.8-.03 2.95-1.63 4.04-3.25 1.29-1.85 1.81-3.67 1.83-3.76-.04-.02-3.76-1.44-3.78-5.28zM14.78 4.3C15.7 3.18 16.32 1.62 16.14 0c-1.37.06-3.07.93-4.04 2.02-.87.97-1.65 2.56-1.45 4.06 1.54.12 3.12-.78 4.13-1.78z" fill="white"/></svg>
+            <div class="dl-btn-text">
+              <span class="dl-btn-sub">Download on the</span>
+              <span class="dl-btn-main">App Store</span>
+            </div>
+          </a>
+        </div>
+        <p class="dl-note">Available on Android & iOS · Free to download · Launching soon</p>
+      </div>
+      <div class="dl-visual" aria-hidden="true">
+        <div class="dl-phone">
+          <div class="dl-phone-screen">
+            <div class="dl-screen-header">
+              <div class="dl-screen-logo">
+                <img src="NLogo.png" alt="" width="28" height="28" style="object-fit:contain;border-radius:6px;"/>
+                <span>Nolubz</span>
+              </div>
+              <div class="dl-screen-notif">🔔</div>
+            </div>
+            <div class="dl-screen-balance">
+              <div class="dl-bal-label">Total Balance</div>
+              <div class="dl-bal-amount" id="dlBalance">$0.00</div>
+              <div class="dl-bal-nolz">⬡ 1 NOLZ = $1.00 USD</div>
+            </div>
+            <div class="dl-screen-actions">
+              <div class="dl-action"><img src="Send.png" alt="Send" width="28" height="28"/><span>Send</span></div>
+              <div class="dl-action"><img src="Receive.png" alt="Receive" width="28" height="28"/><span>Receive</span></div>
+              <div class="dl-action"><img src="Top-Up.png" alt="Top Up" width="28" height="28"/><span>Top Up</span></div>
+              <div class="dl-action"><img src="Withdraw.png" alt="Withdraw" width="28" height="28"/><span>Withdraw</span></div>
+            </div>
+            <div class="dl-screen-tx">
+              <div class="dl-tx-title">Recent</div>
+              <div class="dl-tx-item"><span class="dl-tx-ico" style="background:rgba(74,222,128,.15);">↑</span><div><div class="dl-tx-name">From Toronto</div><div class="dl-tx-time">Now</div></div><span class="dl-tx-amt" style="color:#10B981;">+$300</span></div>
+              <div class="dl-tx-item"><span class="dl-tx-ico" style="background:rgba(239,68,68,.12);">↓</span><div><div class="dl-tx-name">Xecro — Deal</div><div class="dl-tx-time">1h ago</div></div><span class="dl-tx-amt" style="color:#EF4444;">-$150</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="dl-glow"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer aria-label="Site footer">
   <div class="wrap">
@@ -861,8 +967,10 @@
   const pc=document.getElementById('ptcl');
   for(let i=0;i<26;i++){const p=document.createElement('div');p.className='pt';p.style.cssText=`left:${Math.random()*100}%;bottom:${Math.random()*15}%;width:${1+Math.random()*2.5}px;height:${1+Math.random()*2.5}px;animation-duration:${7+Math.random()*9}s;animation-delay:${Math.random()*9}s;`;pc.appendChild(p);}
 
-  /* Balance counter */
+  /* Balance counters */
   let bv=0;const be=document.getElementById('hbal');
+  let dv=0;const de=document.getElementById('dlBalance');
+  const di=setInterval(()=>{dv=Math.min(dv+1243/60,1243);if(de)de.textContent='$'+dv.toFixed(2);if(dv>=1243)clearInterval(di);},28);
   const bi=setInterval(()=>{bv=Math.min(bv+843.2/60,843.2);be.textContent='$'+bv.toFixed(2);if(bv>=843.2)clearInterval(bi);},28);
 
   /* Scroll reveal */

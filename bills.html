@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ArqaSave — Goal Savings, Group Savings & Calendar Plans | Nolubz</title>
+  <meta name="description" content="ArqaSave by Nolubz helps you save smarter — personally toward a goal, automatically on a schedule, or together in group savings circles with friends and family. Available in 40+ countries."/>
+  <meta name="keywords" content="goal savings app, group savings, digital savings plan, calendar savings, rotating savings, save money online, ArqaSave, Nolubz savings, chit fund, susu, esusu"/>
+  <meta name="robots" content="index, follow"/><link rel="canonical" href="https://nolubz.com/products/arqasave.html"/>
+  <meta property="og:title" content="ArqaSave — Save Smarter, Together | Nolubz"/>
+  <meta property="og:description" content="Personal goals, calendar plans, group savings circles. ArqaSave makes saving simple, social, and powerful."/>
+  <meta property="og:url" content="https://nolubz.com/products/arqasave.html"/>
+  <meta property="og:image" content="https://nolubz.com/og-image.png"/>
+  <link rel="icon" type="image/png" href="../NLogo.png"/><link rel="apple-touch-icon" href="../NLogo.png"/><link rel="shortcut icon" href="../NLogo.png"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230D47A1'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='900' font-size='38' fill='white'>N</text></svg>"/>
+  <link rel="manifest" href="../site.webmanifest"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--navy:#080E1A;--blue-deep:#0D47A1;--blue-mid:#1565C0;--blue-vivid:#1976D2;--blue-light:#E3F2FD;--green:#10B981;--white:#fff;--off-white:#F7F9FF;--surface:#F0F4FF;--text-dark:#080E1A;--text-mid:#374151;--text-soft:#6B7280;--border:#E5EAF5;--max-w:1200px;--shadow-sm:0 2px 12px rgba(13,71,161,.08);--shadow-md:0 8px 32px rgba(13,71,161,.12);--shadow-lg:0 20px 60px rgba(13,71,161,.18)}
+    html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;background:#fff;color:var(--text-dark);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}.reveal.visible{opacity:1;transform:none}
+    .rl{opacity:0;transform:translateX(-36px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}.rl.visible{opacity:1;transform:none}
+    .rr{opacity:0;transform:translateX(36px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}.rr.visible{opacity:1;transform:none}
+    .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
+    @media(prefers-reduced-motion:reduce){.reveal,.rl,.rr{opacity:1;transform:none;transition:none}}
+    nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(13,71,161,.07);transition:box-shadow .3s}
+    nav.scrolled{box-shadow:var(--shadow-sm)}
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}.nav-logo img{width:36px;height:36px;object-fit:contain}
+    .nav-logo-text{font-family:'Plus Jakarta Sans',sans-serif;font-size:21px;font-weight:800;color:var(--blue-deep);letter-spacing:-.3px}
+    .nav-links{display:flex;gap:28px;align-items:center}.nav-links a{font-size:14px;font-weight:500;color:var(--text-mid);text-decoration:none;transition:color .2s}.nav-links a:hover,.nav-links a.active{color:var(--blue-deep)}
+    .nav-actions{display:flex;align-items:center;gap:10px}
+    .nav-ghost{font-size:14px;font-weight:600;color:var(--blue-deep);text-decoration:none;padding:9px 18px;border-radius:100px;transition:background .2s}.nav-ghost:hover{background:var(--blue-light)}
+    .nav-cta{background:var(--blue-deep);color:#fff;padding:10px 22px;border-radius:100px;font-size:14px;font-weight:700;text-decoration:none;transition:transform .15s,box-shadow .15s;box-shadow:0 2px 12px rgba(13,71,161,.28)}.nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(13,71,161,.38)}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}.hamburger span{display:block;width:22px;height:2px;background:var(--text-dark);border-radius:2px}
+    .mob-menu{display:none;position:fixed;inset:0;z-index:999;background:rgba(8,14,26,.97);backdrop-filter:blur(16px);flex-direction:column;align-items:center;justify-content:center;gap:28px}.mob-menu.open{display:flex}
+    .mob-menu a{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:700;color:#fff;text-decoration:none}.mob-menu a.hl{color:#FCD34D}
+    .mob-close{position:absolute;top:24px;right:5%;font-size:28px;color:#fff;cursor:pointer}
+    .wrap{max-width:var(--max-w);margin:0 auto}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue-deep);margin-bottom:14px}.eyebrow::before{content:'';display:block;width:18px;height:2px;background:var(--blue-deep);border-radius:2px}
+    .ew{color:#90CAF9}.ew::before{background:#90CAF9}
+    .h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(28px,3.8vw,50px);font-weight:800;line-height:1.1;color:var(--text-dark);letter-spacing:-1px}.h2 .hl{color:var(--blue-deep)}.h2w{color:#fff}
+    .lead{font-size:clamp(15px,1.4vw,17px);color:var(--text-soft);line-height:1.8;margin-top:14px}.leadw{color:rgba(255,255,255,.58)}
+    .btn-blue{display:inline-flex;align-items:center;gap:8px;background:var(--blue-deep);color:#fff;padding:14px 28px;border-radius:100px;font-size:15px;font-weight:700;text-decoration:none;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 18px rgba(13,71,161,.28);font-family:'Plus Jakarta Sans',sans-serif}.btn-blue:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(13,71,161,.38)}
+    .btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--blue-deep);padding:14px 28px;border-radius:100px;font-size:15px;font-weight:700;text-decoration:none;transition:transform .15s;font-family:'Plus Jakarta Sans',sans-serif;box-shadow:0 4px 18px rgba(0,0,0,.15)}.btn-white:hover{transform:translateY(-2px)}
+    .page-hero{padding:140px 5% 80px;background:linear-gradient(135deg,#080E1A 0%,#0D2B6B 50%,#0D47A1 100%);position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;width:600px;height:600px;top:-200px;right:-100px;background:radial-gradient(ellipse,rgba(33,150,243,.15) 0%,transparent 70%);pointer-events:none}
+    .hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:6px 16px;border-radius:100px;color:rgba(255,255,255,.88);font-size:12px;font-weight:600;margin-bottom:24px;backdrop-filter:blur(8px)}
+    .page-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(34px,5vw,62px);font-weight:800;line-height:1.06;color:#fff;letter-spacing:-1.5px;margin-bottom:20px}
+    .page-hero h1 span{color:#90CAF9}
+    .hero-sub{font-size:clamp(15px,1.5vw,18px);color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:32px}
+    /* Savings card mock */
+    .save-mock{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:28px;backdrop-filter:blur(12px)}
+    .sm-lbl{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:16px}
+    .sm-goal{background:rgba(255,255,255,.07);border-radius:16px;padding:18px;margin-bottom:12px}
+    .sm-goal-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+    .sm-goal-emoji{font-size:24px}
+    .sm-goal-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;color:#fff}
+    .sm-goal-type{font-size:11px;color:rgba(255,255,255,.38);margin-top:2px}
+    .sm-bar-wrap{background:rgba(255,255,255,.08);border-radius:100px;height:8px;overflow:hidden;margin-bottom:6px}
+    .sm-bar{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--blue-deep),#2196F3)}
+    .sm-bar-meta{display:flex;justify-content:space-between;font-size:11px;color:rgba(255,255,255,.38)}
+    .sm-bar-meta strong{color:rgba(255,255,255,.7)}
+    /* 3 TYPES */
+    .types{padding:92px 5%;background:var(--off-white)}
+    .types-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px}
+    .type-card{border-radius:22px;padding:36px 30px;border:1.5px solid var(--border);background:#fff;transition:all .25s;position:relative;overflow:hidden}
+    .type-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+    .type-card.featured{background:linear-gradient(135deg,#080E1A,#0D2B6B);border-color:transparent}
+    .type-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;border-radius:22px 22px 0 0}
+    .type-card.personal::before{background:var(--blue-deep)}
+    .type-card.calendar::before{background:#00897B}
+    .type-card.group::before{background:#F59E0B}
+    .type-num{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--text-soft);margin-bottom:20px;display:flex;align-items:center;gap:8px}
+    .type-card.featured .type-num{color:rgba(255,255,255,.38)}
+    .type-ico{font-size:36px;margin-bottom:16px;display:block}
+    .type-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:800;color:var(--text-dark);margin-bottom:10px}
+    .type-card.featured h3{color:#fff}
+    .type-card p{font-size:14px;color:var(--text-soft);line-height:1.7;margin-bottom:20px}
+    .type-card.featured p{color:rgba(255,255,255,.56)}
+    .type-feats{display:flex;flex-direction:column;gap:8px}
+    .tf{font-size:13px;color:var(--text-mid);display:flex;align-items:center;gap:8px}
+    .tf::before{content:'✓';color:var(--blue-deep);font-weight:800;font-size:11px}
+    .type-card.featured .tf{color:rgba(255,255,255,.65)}.type-card.featured .tf::before{color:#4ADE80}
+    /* GROUP DEEP DIVE */
+    .group-section{padding:92px 5%;background:#fff}
+    .group-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+    .group-mock{background:var(--off-white);border-radius:24px;padding:32px;border:1.5px solid var(--border)}
+    .gm-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:800;color:var(--text-dark);margin-bottom:4px}
+    .gm-sub{font-size:12px;color:var(--text-soft);margin-bottom:20px}
+    .gm-members{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
+    .gm-member{display:flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--border);border-radius:100px;padding:6px 12px;font-size:12px;font-weight:600;color:var(--text-dark)}
+    .gm-member-dot{width:7px;height:7px;border-radius:50%}
+    .dot-paid{background:var(--green)}.dot-pending{background:#F59E0B}
+    .gm-progress{background:var(--surface);border-radius:100px;height:10px;overflow:hidden;margin-bottom:8px}
+    .gm-progress-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--blue-deep),#2196F3)}
+    .gm-meta{display:flex;justify-content:space-between;font-size:12px;color:var(--text-soft);margin-bottom:16px}
+    .gm-next{background:var(--blue-light);border-radius:12px;padding:14px;font-size:13px;color:var(--blue-deep);font-weight:600}
+    /* FAQ */
+    .faq{padding:92px 5%;background:var(--off-white)}
+    .faq-hdr{text-align:center;margin-bottom:48px}
+    .faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+    .fitem{background:#fff;border-radius:16px;border:1.5px solid var(--border);overflow:hidden;transition:border-color .2s,box-shadow .2s}.fitem.open{border-color:var(--blue-vivid);box-shadow:var(--shadow-sm)}
+    .fq{display:flex;align-items:center;justify-content:space-between;padding:20px 26px;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:var(--text-dark);gap:14px;user-select:none}
+    .fchv{width:26px;height:26px;border-radius:50%;background:var(--surface);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;transition:background .2s,transform .3s}.fitem.open .fchv{background:var(--blue-deep);color:#fff;transform:rotate(180deg)}
+    .fa{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1),padding .3s;padding:0 26px;font-size:14px;color:var(--text-soft);line-height:1.75}.fitem.open .fa{max-height:300px;padding:0 26px 22px}
+    .cta-band{padding:80px 5%;background:#fff;text-align:center}
+    .cta-band h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(26px,4vw,48px);font-weight:800;color:var(--text-dark);letter-spacing:-1px;margin-bottom:14px}
+    .cta-band p{font-size:16px;color:var(--text-soft);max-width:480px;margin:0 auto 32px;line-height:1.75}
+    footer{background:#080E1A;padding:52px 5% 0}
+    .fg{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr 1fr;gap:32px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .fb{display:flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:12px}.fb img{width:28px;height:28px;object-fit:contain}.fb-txt{font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;color:#fff}
+    .fd{font-size:13px;color:rgba(255,255,255,.36);line-height:1.7;max-width:240px}
+    .fcol h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,.8);letter-spacing:.4px;margin-bottom:14px}
+    .fcol a{display:block;font-size:13px;color:rgba(255,255,255,.34);text-decoration:none;margin-bottom:9px;transition:color .2s}.fcol a:hover{color:rgba(255,255,255,.78)}
+    .fbot{display:flex;align-items:center;justify-content:space-between;padding:18px 0;flex-wrap:wrap;gap:8px}
+    .fcp{font-size:12px;color:rgba(255,255,255,.18)}.fnolz{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;color:#FCD34D;letter-spacing:2px;border:1px solid rgba(252,211,77,.24);padding:3px 8px;border-radius:5px}
+    .flinks{display:flex;gap:16px}.flinks a{font-size:12px;color:rgba(255,255,255,.18);text-decoration:none;transition:color .2s}.flinks a:hover{color:rgba(255,255,255,.56)}
+    @media(max-width:900px){.nav-links,.nav-ghost{display:none}.hamburger{display:flex}.hero-inner{grid-template-columns:1fr}.types-grid{grid-template-columns:1fr}.group-inner{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr;gap:22px}}
+    @media(max-width:600px){.fg{grid-template-columns:1fr}.fbot{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+<div class="mob-menu" id="mobMenu"><span class="mob-close" id="mobClose">✕</span><a href="../index.html">Home</a><a href="wallet.html">Wallet</a><a href="xecro.html">Xecro</a><a href="arqasave.html" class="hl">Savings</a><a href="../countries.html">Countries</a><a href="../faq.html">FAQ</a><a href="../index.html#waitlist" class="hl">Join Waitlist</a></div>
+<nav id="mainNav">
+  <a href="../index.html" class="nav-logo"><img src="../NLogo.png" alt="Nolubz" width="36" height="36"/><span class="nav-logo-text">Nolubz</span></a>
+  <div class="nav-links"><a href="wallet.html">Wallet</a><a href="xecro.html">Xecro</a><a href="arqasave.html" class="active">Savings</a><a href="../countries.html">Countries</a><a href="../about.html">About</a></div>
+  <div class="nav-actions"><a href="../faq.html" class="nav-ghost">FAQ</a><a href="../index.html#waitlist" class="nav-cta">Join Waitlist</a><div class="hamburger" id="menuBtn"><span></span><span></span><span></span></div></div>
+</nav>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badge"><img src="../ArqaSave.png" alt="" width="18" height="18" style="object-fit:contain;"/> ArqaSave</div>
+        <h1>Savings that <span>grow with your goals.</span></h1>
+        <p class="hero-sub">Personal goals. Automatic schedules. Community savings circles. ArqaSave gives you three powerful ways to build the financial future you deserve — at your own pace, on your own terms.</p>
+        <a href="../index.html#waitlist" class="btn-white">Start saving today →</a>
+      </div>
+      <div class="save-mock">
+        <div class="sm-lbl">My Savings Goals</div>
+        <div class="sm-goal">
+          <div class="sm-goal-top"><span class="sm-goal-emoji">🏠</span><div><div class="sm-goal-name">New Apartment</div><div class="sm-goal-type">Personal · Target: $5,000</div></div></div>
+          <div class="sm-bar-wrap"><div class="sm-bar" style="width:68%"></div></div>
+          <div class="sm-bar-meta"><span><strong>$3,400</strong> saved</span><span>68% · On track ✓</span></div>
+        </div>
+        <div class="sm-goal">
+          <div class="sm-goal-top"><span class="sm-goal-emoji">✈️</span><div><div class="sm-goal-name">Holiday Fund</div><div class="sm-goal-type">Calendar · Weekly · 24 weeks</div></div></div>
+          <div class="sm-bar-wrap"><div class="sm-bar" style="width:45%;background:linear-gradient(90deg,#00897B,#26A69A)"></div></div>
+          <div class="sm-bar-meta"><span><strong>$540</strong> saved</span><span>Week 11 of 24</span></div>
+        </div>
+        <div class="sm-goal">
+          <div class="sm-goal-top"><span class="sm-goal-emoji">👨‍👩‍👧‍👦</span><div><div class="sm-goal-name">Family Circle</div><div class="sm-goal-type">Group · 6 members · $200/month</div></div></div>
+          <div class="sm-bar-wrap"><div class="sm-bar" style="width:50%;background:linear-gradient(90deg,#F59E0B,#FBBF24)"></div></div>
+          <div class="sm-bar-meta"><span><strong>Cycle 3 of 6</strong></span><span>Your turn: Month 5</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="types" id="types">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;margin-bottom:52px;">
+      <div class="eyebrow" style="justify-content:center;">Three ways to save</div>
+      <h2 class="h2" style="text-align:center;">Pick the savings style <span class="hl">that fits your life.</span></h2>
+      <p class="lead" style="max-width:500px;margin:14px auto 0;text-align:center;">Every person saves differently. ArqaSave adapts to you — not the other way around.</p>
+    </div>
+    <div class="types-grid">
+      <div class="type-card personal reveal d1">
+        <div class="type-num">01 · Personal</div>
+        <span class="type-ico">🎯</span>
+        <h3>Personal Savings</h3>
+        <p>Set a goal — any goal. Name it, set a target amount, and contribute whenever you want. Watch your progress grow toward something that matters to you.</p>
+        <div class="type-feats">
+          <div class="tf">Set any savings goal in NOLZ</div>
+          <div class="tf">Contribute on your own schedule</div>
+          <div class="tf">Visual progress tracker</div>
+          <div class="tf">Withdraw anytime (small fee applies)</div>
+        </div>
+        <a href="../index.html#waitlist" class="btn-blue" style="margin-top:24px;">Set a personal goal →</a>
+      </div>
+      <div class="type-card calendar featured reveal d2">
+        <div class="type-num">02 · Calendar</div>
+        <span class="type-ico">📅</span>
+        <h3>Calendar Savings</h3>
+        <p>Choose a cadence — daily, weekly, or monthly — and set a target date. ArqaSave automatically tracks your contributions and keeps you on pace.</p>
+        <div class="type-feats">
+          <div class="tf">Daily, weekly, or monthly plans</div>
+          <div class="tf">Target date countdown</div>
+          <div class="tf">Contribution reminders</div>
+          <div class="tf">Early exit with minimal fee</div>
+        </div>
+        <a href="../index.html#waitlist" class="btn-white" style="margin-top:24px;">Create a calendar plan →</a>
+      </div>
+      <div class="type-card group reveal d3">
+        <div class="type-num">03 · Group</div>
+        <span class="type-ico">👥</span>
+        <h3>Group Savings</h3>
+        <p>Invite friends and family into a rotating savings circle — a trusted tradition made digital. Everyone contributes each cycle, and each person receives the full pot in turn.</p>
+        <div class="type-feats">
+          <div class="tf">Invite up to 20 members</div>
+          <div class="tf">Automated contribution cycles</div>
+          <div class="tf">Transparent payout order</div>
+          <div class="tf">Full accountability built in</div>
+        </div>
+        <a href="../index.html#waitlist" class="btn-blue" style="margin-top:24px;">Start a group →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="group-section">
+  <div class="wrap">
+    <div class="group-inner">
+      <div class="reveal rl">
+        <div class="eyebrow">Group Savings — deeper</div>
+        <h2 class="h2">A tradition as old as community. <span class="hl">Now digital.</span></h2>
+        <p class="lead">Known by many names — Susu, Esusu, Chit Fund, Tanda, Paluwagan — rotating savings circles have helped communities build wealth for generations. ArqaSave brings this powerful tradition into the digital age, with full transparency, accountability, and security built in.</p>
+        <p class="lead" style="margin-top:12px;">Every member contributes every cycle. Each person receives the full pot once. No one is left behind. No one can disappear with the money.</p>
+        <a href="../index.html#waitlist" class="btn-blue" style="margin-top:28px;">Start a group →</a>
+      </div>
+      <div class="group-mock reveal rr">
+        <div class="gm-title">Family Savings Circle</div>
+        <div class="gm-sub">6 members · $200/month each · $1,200/cycle</div>
+        <div class="gm-members">
+          <div class="gm-member"><span class="gm-member-dot dot-paid"></span>Sarah K.</div>
+          <div class="gm-member"><span class="gm-member-dot dot-paid"></span>James O.</div>
+          <div class="gm-member"><span class="gm-member-dot dot-paid"></span>Maria L.</div>
+          <div class="gm-member"><span class="gm-member-dot dot-pending"></span>David N.</div>
+          <div class="gm-member"><span class="gm-member-dot dot-paid"></span>Aisha M.</div>
+          <div class="gm-member"><span class="gm-member-dot dot-paid"></span>You</div>
+        </div>
+        <div class="gm-progress"><div class="gm-progress-fill" style="width:83%"></div></div>
+        <div class="gm-meta"><span>5 of 6 contributed this cycle</span><span>$1,000 of $1,200</span></div>
+        <div class="gm-next">🎯 Next payout: <strong>David N.</strong> receives $1,200 in 3 days</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="faq-hdr reveal"><div class="eyebrow" style="justify-content:center;">FAQ</div><h2 class="h2" style="text-align:center;">ArqaSave questions, <span class="hl">answered.</span></h2></div>
+    <div class="faq-list">
+      <div class="fitem"><div class="fq" onclick="tf(this)">Can I withdraw my savings early?<span class="fchv">▾</span></div><div class="fa">Yes. You can withdraw from Personal and Calendar Savings at any time. An early withdrawal fee applies to Calendar Savings if you exit before your target date. For Group Savings, early withdrawal rules depend on the group cycle stage — the group admin sets these terms.</div></div>
+      <div class="fitem"><div class="fq" onclick="tf(this)">How does Group Savings prevent fraud?<span class="fchv">▾</span></div><div class="fa">All members are KYC-verified Nolubz users. Contributions are locked and tracked automatically — no one can skip a payment or take someone else's payout. The cycle order is set at the start and cannot be changed without group consensus.</div></div>
+      <div class="fitem"><div class="fq" onclick="tf(this)">Can I have multiple savings goals?<span class="fchv">▾</span></div><div class="fa">Yes. You can run multiple Personal goals, Calendar plans, and Group Savings simultaneously — all managed from your ArqaSave dashboard.</div></div>
+      <div class="fitem"><div class="fq" onclick="tf(this)">How many people can join a Group Savings circle?<span class="fchv">▾</span></div><div class="fa">Group Savings circles support between 2 and 20 members. Each member must have a verified Nolubz account.</div></div>
+      <div class="fitem"><div class="fq" onclick="tf(this)">What currency are ArqaSave balances held in?<span class="fchv">▾</span></div><div class="fa">All ArqaSave balances are held in NOLZ — 1 NOLZ = 1 USD, always. Your savings never lose value due to exchange rate changes while held in ArqaSave.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="download-strip" style="padding:60px 5%;background:linear-gradient(135deg,#080E1A,#0D2B6B);text-align:center;"><div style="max-width:800px;margin:0 auto;"><p style="font-family:Plus Jakarta Sans,sans-serif;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#90CAF9;margin-bottom:12px;">GET THE APP</p><h2 style="font-family:Plus Jakarta Sans,sans-serif;font-size:clamp(24px,3.5vw,40px);font-weight:800;color:#fff;letter-spacing:-1px;margin-bottom:16px;">The full Nolubz experience<br>is in your pocket.</h2><p style="font-size:15px;color:rgba(255,255,255,.5);margin-bottom:32px;line-height:1.75;">Send money, save, protect deals and pay bills — all from one beautifully designed app. Available on Android &amp; iOS.</p><div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;"><a href='https://play.google.com/store/apps/details?id=com.nolubz.app' style="display:inline-flex;align-items:center;gap:12px;background:#1a1a2e;border:1.5px solid rgba(255,255,255,.2);border-radius:14px;padding:13px 22px;text-decoration:none;transition:transform .15s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'"><svg width='20' height='20' viewBox='0 0 24 24' fill='white'><path d='M3.18 23.5c.34.19.72.25 1.09.19L15.5 12 4.27.31A1.83 1.83 0 003.18.5C2.46.91 2 1.7 2 2.56v18.88c0 .86.46 1.65 1.18 2.06z'/></svg><div style='text-align:left'><div style='font-size:10px;color:rgba(255,255,255,.5);'>Get it on</div><div style='font-family:Plus Jakarta Sans,sans-serif;font-size:16px;font-weight:800;color:#fff;'>Google Play</div></div></a><a href='https://apps.apple.com/app/nolubz/id0000000000' style="display:inline-flex;align-items:center;gap:12px;background:#1a1a2e;border:1.5px solid rgba(255,255,255,.2);border-radius:14px;padding:13px 22px;text-decoration:none;transition:transform .15s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'"><svg width='18' height='22' viewBox='0 0 22 26' fill='white'><path d='M18.07 13.72c-.03-3.26 2.66-4.84 2.78-4.91-1.52-2.22-3.88-2.52-4.71-2.55-2-.21-3.93 1.18-4.95 1.18-1.03 0-2.6-1.16-4.28-1.13C4.7 6.35 2.6 7.5 1.44 9.38c-2.34 4.05-.6 10.03 1.67 13.31 1.12 1.61 2.44 3.41 4.17 3.35 1.68-.07 2.31-1.08 4.34-1.08 2.02 0 2.59 1.08 4.36 1.05 1.8-.03 2.95-1.63 4.04-3.25 1.29-1.85 1.81-3.67 1.83-3.76-.04-.02-3.76-1.44-3.78-5.28zM14.78 4.3C15.7 3.18 16.32 1.62 16.14 0c-1.37.06-3.07.93-4.04 2.02-.87.97-1.65 2.56-1.45 4.06 1.54.12 3.12-.78 4.13-1.78z'/></svg><div style='text-align:left'><div style='font-size:10px;color:rgba(255,255,255,.5);'>Download on the</div><div style='font-family:Plus Jakarta Sans,sans-serif;font-size:16px;font-weight:800;color:#fff;'>App Store</div></div></a></div><p style='font-size:12px;color:rgba(255,255,255,.25);margin-top:20px;'>Free to download · Android &amp; iOS · Launching soon</p></div></section><section class="cta-band">
+  <div class="wrap reveal">
+    <h2>Ready to start saving smarter?</h2>
+    <p>Join the waitlist and be among the first to open your ArqaSave account when Nolubz launches in your country.</p>
+    <a href="../index.html#waitlist" class="btn-blue">Join the Waitlist →</a>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div class="fg">
+    <div><a href="../index.html" class="fb"><img src="../NLogo.png" alt="Nolubz" width="28" height="28"/><span class="fb-txt">Nolubz</span></a><p class="fd">Send, receive, save and secure — anywhere in the world.</p></div>
+    <div class="fcol"><h4>Products</h4><a href="wallet.html">NOLZ Wallet</a><a href="xecro.html">Xecro Escrow</a><a href="arqasave.html">ArqaSave</a><a href="bills.html">Bills & Airtime</a></div>
+    <div class="fcol"><h4>Platform</h4><a href="../countries.html">Countries</a><a href="../security.html">Security</a><a href="../faq.html">FAQ</a><a href="../about.html">About</a></div>
+    <div class="fcol"><h4>Company</h4><a href="../about.html">About Nolubz</a><a href="mailto:support@nolubz.com">Careers</a><a href="mailto:support@nolubz.com">Press</a></div>
+    <div class="fcol"><h4>Support</h4><a href="mailto:support@nolubz.com">Help Center</a><a href="mailto:support@nolubz.com">Contact</a><a href="mailto:support@nolubz.com">Privacy</a><a href="mailto:support@nolubz.com">Terms</a></div>
+  </div>
+  <div class="fbot"><span class="fcp">© 2026 Nolubz. All rights reserved.</span><span class="fnolz">NOLZ</span><div class="flinks"><a href="mailto:support@nolubz.com">Privacy</a><a href="mailto:support@nolubz.com">Terms</a><a href="mailto:support@nolubz.com">support@nolubz.com</a></div></div>
+</div></footer>
+<script>
+  window.addEventListener('scroll',()=>document.getElementById('mainNav').classList.toggle('scrolled',scrollY>20),{passive:true});
+  document.getElementById('menuBtn').onclick=()=>document.getElementById('mobMenu').classList.add('open');
+  document.getElementById('mobClose').onclick=()=>document.getElementById('mobMenu').classList.remove('open');
+  const ro=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');ro.unobserve(x.target);}}),{threshold:0.1});
+  document.querySelectorAll('.reveal,.rl,.rr').forEach(el=>ro.observe(el));
+  function tf(btn){const item=btn.parentElement;const o=item.classList.contains('open');document.querySelectorAll('.fitem.open').forEach(i=>i.classList.remove('open'));if(!o)item.classList.add('open');}
+</script>
+</body>
+</html>
