@@ -1,0 +1,10 @@
+# Nolubz robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://nolubz.com/sitemap.xml
+
+# Block dev/admin paths (future-proofing)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
