@@ -5,14 +5,19 @@
   <title>ArqaSave — Goal Savings, Group Savings & Calendar Plans | Nolubz</title>
   <meta name="description" content="ArqaSave by Nolubz helps you save smarter — personally toward a goal, automatically on a schedule, or together in group savings circles with friends and family. Available in 40+ countries."/>
   <meta name="keywords" content="goal savings app, group savings, digital savings plan, calendar savings, rotating savings, save money online, ArqaSave, Nolubz savings, chit fund, susu, esusu"/>
-  <meta name="robots" content="index, follow"/><link rel="canonical" href="https://nolubz.com/products/arqasave.html"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../NIcon.png?v=3"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="../NIcon.png?v=3"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="../NIcon.png?v=3"/>
+  <link rel="shortcut icon" href="../NIcon.png?v=3"/>
+  <link rel="manifest" href="../site.webmanifest"/><link rel="canonical" href="https://nolubz.com/products/arqasave.html"/>
   <meta property="og:title" content="ArqaSave — Save Smarter, Together | Nolubz"/>
   <meta property="og:description" content="Personal goals, calendar plans, group savings circles. ArqaSave makes saving simple, social, and powerful."/>
   <meta property="og:url" content="https://nolubz.com/products/arqasave.html"/>
   <meta property="og:image" content="https://nolubz.com/og-image.png"/>
-  <link rel="icon" type="image/png" href="../NIcon.png?v=2"/><link rel="apple-touch-icon" href="../NIcon.png?v=2"/><link rel="shortcut icon" href="../NIcon.png?v=2"/>
+  
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230D47A1'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui' font-weight='900' font-size='38' fill='white'>N</text></svg>"/>
-  <link rel="manifest" href="../site.webmanifest"/>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
   <style>
@@ -120,27 +125,30 @@
     @media(max-width:900px){.nav-links,.nav-ghost{display:none}.hamburger{display:flex}.hero-inner{grid-template-columns:1fr}.types-grid{grid-template-columns:1fr}.group-inner{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr;gap:22px}}
     @media(max-width:600px){.fg{grid-template-columns:1fr}.fbot{flex-direction:column;align-items:flex-start}}
   
-    /* ── FOOTER REDESIGN ── */
-    footer{background:#080E1A;padding:52px 5% 0}
-    .footer-main{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.07);align-items:start}
-    .footer-brand-col{}
-    .fb{display:flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:14px}
+    /* ── FOOTER ── */
+    footer{background:#080E1A;padding:44px 5% 0}
+    .footer-main{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.07);align-items:start}
+    .fb{display:flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:12px}
     .fb img{width:30px;height:30px;object-fit:contain}
     .fb-txt{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;color:#fff}
-    .fd{font-size:13px;color:rgba(255,255,255,.38);line-height:1.75;max-width:240px;margin-bottom:18px}
-    .fsoc{display:flex;gap:8px}
+    .fd{font-size:13px;color:rgba(255,255,255,.38);line-height:1.75;max-width:240px;margin-bottom:14px}
+    .fsoc{display:flex;gap:8px;margin-bottom:14px}
     .fsoc a{width:32px;height:32px;border-radius:7px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:13px;text-decoration:none;color:rgba(255,255,255,.55);transition:background .2s,color .2s}
     .fsoc a:hover{background:rgba(255,255,255,.12);color:#fff}
-    .footer-links-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-    .fcol h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,.82);letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px}
-    .fcol a{display:block;font-size:13px;color:rgba(255,255,255,.38);text-decoration:none;margin-bottom:9px;transition:color .2s}
+    .fbot-links{display:flex;align-items:center;gap:10px}
+    .fbot-links a{font-size:12px;color:rgba(255,255,255,.38);text-decoration:none;transition:color .2s}
+    .fbot-links a:hover{color:rgba(255,255,255,.75)}
+    .fbot-sep{font-size:12px;color:rgba(255,255,255,.2)}
+    .footer-links-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .fcol h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,.82);letter-spacing:.5px;text-transform:uppercase;margin-bottom:12px}
+    .fcol a{display:block;font-size:13px;color:rgba(255,255,255,.38);text-decoration:none;margin-bottom:8px;transition:color .2s}
     .fcol a:hover{color:rgba(255,255,255,.82)}
-    .fbot{display:flex;align-items:center;justify-content:space-between;padding:18px 0;flex-wrap:wrap;gap:8px}
+    .fbot{display:flex;align-items:center;justify-content:center;padding:14px 0}
     .fcp{font-size:12px;color:rgba(255,255,255,.22)}
-    .fnolz{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;color:#FCD34D;letter-spacing:2px;border:1px solid rgba(252,211,77,.26);padding:3px 8px;border-radius:5px}
-    /* mobile footer */
     @media(max-width:700px){
-      .footer-main{grid-template-columns:1fr;gap:32px}
+      .footer-main{grid-template-columns:1fr;gap:28px}
+      .footer-links-grid{grid-template-columns:1fr 1fr;gap:16px}
+    }
       .footer-links-grid{grid-template-columns:1fr 1fr;gap:20px}
       .fbot{flex-direction:column;align-items:flex-start;gap:8px}
     }
@@ -158,6 +166,10 @@
     .fbot-links a{font-size:12px;color:rgba(255,255,255,.32);text-decoration:none;transition:color .2s}
     .fbot-links a:hover{color:rgba(255,255,255,.7)}
     .fbot-sep{font-size:12px;color:rgba(255,255,255,.2)}
+      .footer-legal{display:flex;align-items:center;gap:10px;margin-top:14px}
+    .footer-legal a{font-size:13px;color:rgba(255,255,255,.45);text-decoration:none;transition:color .2s}
+    .footer-legal a:hover{color:rgba(255,255,255,.82)}
+    .footer-legal span{color:rgba(255,255,255,.2);font-size:12px}
   </style>
 </head>
 <body>
@@ -304,7 +316,7 @@
   <div class="wrap">
     <div class="footer-main">
       <div class="footer-brand-col">
-        <a href="../" class="fb" aria-label="Nolubz home">
+        <a href="../index.html" class="fb" aria-label="Nolubz home">
           <img src="../NLogo.png" alt="Nolubz" width="30" height="30" loading="lazy"/>
           <span class="fb-txt">Nolubz</span>
         </a>
@@ -314,6 +326,11 @@
           <a href="https://linkedin.com/company/nolubz" aria-label="LinkedIn">in</a>
           <a href="https://instagram.com/nolubz" aria-label="Instagram">ig</a>
           <a href="https://t.me/nolubz" aria-label="Telegram">✈</a>
+        </div>
+        <div class="fbot-links">
+          <a href="mailto:support@nolubz.com">Contact</a>
+          <span class="fbot-sep">·</span>
+          <a href="../privacy.html">Privacy</a>
         </div>
       </div>
       <div class="footer-links-grid">
@@ -330,18 +347,11 @@
           <a href="../security.html">Security</a>
           <a href="../faq.html">FAQ</a>
           <a href="../about.html">About</a>
-          
         </div>
       </div>
     </div>
     <div class="fbot">
       <span class="fcp">© 2026 Nolubz. All rights reserved.</span>
-      <span class="fnolz">NOLZ</span>
-      <div class="fbot-links">
-        <a href="mailto:support@nolubz.com">Contact</a>
-        <span class="fbot-sep">·</span>
-        <a href="../privacy.html">Privacy</a>
-      </div>
     </div>
   </div>
 </footer>
