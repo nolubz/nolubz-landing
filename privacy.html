@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy | Nolubz</title>
+  <meta name="description" content="Nolubz Network Privacy Policy — how we collect, use and protect your personal data. Nolubz is a ledger-based transaction monitoring platform, not a bank or financial institution."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://nolubz.com/privacy.html"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="NIcon.png?v=3"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="NIcon.png?v=3"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="NIcon.png?v=3"/>
+  <link rel="shortcut icon" href="NIcon.png?v=3"/>
+  <link rel="manifest" href="site.webmanifest"/>
+  <meta property="og:title" content="Privacy Policy | Nolubz"/>
+  <meta property="og:url" content="https://nolubz.com/privacy.html"/>
+  <meta property="og:image" content="https://nolubz.com/og-image.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--navy:#080E1A;--blue-deep:#0D47A1;--blue-light:#E3F2FD;--surface:#F7F9FF;--text-dark:#080E1A;--text-mid:#374151;--text-soft:#6B7280;--border:#E5EAF5;--max-w:800px;--shadow-sm:0 2px 12px rgba(13,71,161,.08)}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;background:#fff;color:var(--text-dark);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(13,71,161,.07);transition:box-shadow .3s}
+    nav.scrolled{box-shadow:var(--shadow-sm)}
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .nav-logo img{width:36px;height:36px;object-fit:contain}
+    .nav-logo-text{font-family:'Plus Jakarta Sans',sans-serif;font-size:21px;font-weight:800;color:var(--blue-deep);letter-spacing:-.3px}
+    .nav-links{display:flex;gap:28px;align-items:center}
+    .nav-links a{font-size:14px;font-weight:500;color:var(--text-mid);text-decoration:none;transition:color .2s}
+    .nav-links a:hover{color:var(--blue-deep)}
+    .nav-cta{background:var(--blue-deep);color:#fff;padding:10px 22px;border-radius:100px;font-size:14px;font-weight:700;text-decoration:none;box-shadow:0 2px 12px rgba(13,71,161,.28)}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--text-dark);border-radius:2px}
+    .mob-menu{display:none;position:fixed;inset:0;z-index:999;background:rgba(8,14,26,.97);backdrop-filter:blur(16px);flex-direction:column;align-items:center;justify-content:center;gap:28px}
+    .mob-menu.open{display:flex}
+    .mob-menu a{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:700;color:#fff;text-decoration:none}
+    .mob-menu a.hl{color:#FCD34D}
+    .mob-close{position:absolute;top:24px;right:5%;font-size:28px;color:#fff;cursor:pointer}
+    .wrap{max-width:var(--max-w);margin:0 auto;padding:0 24px}
+    /* Hero */
+    .page-hero{padding:120px 5% 56px;background:linear-gradient(135deg,#080E1A 0%,#0D2B6B 60%,#0D47A1 100%);text-align:center}
+    .page-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(32px,5vw,52px);font-weight:800;color:#fff;letter-spacing:-1.5px;margin-bottom:14px}
+    .page-hero p{font-size:15px;color:rgba(255,255,255,.52);max-width:520px;margin:0 auto}
+    .page-hero .updated{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-size:12px;color:rgba(255,255,255,.35);background:rgba(255,255,255,.06);padding:6px 16px;border-radius:100px;border:1px solid rgba(255,255,255,.1)}
+    /* Content */
+    .content{padding:60px 0 80px}
+    /* Important notice box */
+    .notice{background:var(--blue-light);border:1.5px solid rgba(13,71,161,.15);border-radius:16px;padding:24px 28px;margin-bottom:48px}
+    .notice-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;color:var(--blue-deep);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+    .notice p{font-size:14px;color:var(--text-mid);line-height:1.75}
+    /* Sections */
+    .section{margin-bottom:48px}
+    .section-num{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue-deep);margin-bottom:8px}
+    .section h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:800;color:var(--text-dark);margin-bottom:16px;letter-spacing:-.3px}
+    .section p{font-size:15px;color:var(--text-mid);line-height:1.8;margin-bottom:14px}
+    .section p:last-child{margin-bottom:0}
+    .section ul{margin:12px 0 14px 0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+    .section ul li{font-size:15px;color:var(--text-mid);line-height:1.75;padding-left:20px;position:relative}
+    .section ul li::before{content:'—';position:absolute;left:0;color:var(--blue-deep);font-weight:700}
+    .divider{height:1px;background:var(--border);margin-bottom:48px}
+    /* Warning box */
+    .warning{background:#FFF8E1;border:1.5px solid rgba(245,158,11,.2);border-radius:14px;padding:20px 24px;margin:20px 0}
+    .warning p{font-size:14px;color:#92400E;line-height:1.75;margin:0}
+    .warning strong{font-weight:700}
+    /* Contact box */
+    .contact-box{background:var(--surface);border:1.5px solid var(--border);border-radius:16px;padding:28px;margin-top:32px;text-align:center}
+    .contact-box h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;color:var(--text-dark);margin-bottom:8px}
+    .contact-box p{font-size:14px;color:var(--text-soft);margin-bottom:14px}
+    .contact-box a{color:var(--blue-deep);font-weight:600;text-decoration:none}
+    .contact-box a:hover{text-decoration:underline}
+    /* Footer */
+    footer{background:#080E1A;padding:40px 5% 0}
+    .footer-main{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.07)}
+    .fb{display:flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:12px}
+    .fb img{width:30px;height:30px;object-fit:contain}
+    .fb-txt{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;color:#fff}
+    .fd{font-size:13px;color:rgba(255,255,255,.38);line-height:1.75;max-width:240px;margin-bottom:14px}
+    .fsoc{display:flex;gap:8px;margin-bottom:14px}
+    .fsoc a{width:32px;height:32px;border-radius:7px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:13px;text-decoration:none;color:rgba(255,255,255,.55);transition:background .2s}
+    .fsoc a:hover{background:rgba(255,255,255,.12);color:#fff}
+    .fbot-links{display:flex;align-items:center;gap:10px}
+    .fbot-links a{font-size:12px;color:rgba(255,255,255,.38);text-decoration:none;transition:color .2s}
+    .fbot-links a:hover{color:rgba(255,255,255,.75)}
+    .fbot-sep{font-size:12px;color:rgba(255,255,255,.2)}
+    .footer-links-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .fcol h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,.82);letter-spacing:.5px;text-transform:uppercase;margin-bottom:12px}
+    .fcol a{display:block;font-size:13px;color:rgba(255,255,255,.38);text-decoration:none;margin-bottom:8px;transition:color .2s}
+    .fcol a:hover{color:rgba(255,255,255,.82)}
+    .fbot{display:flex;align-items:center;justify-content:center;padding:14px 0}
+    .fcp{font-size:12px;color:rgba(255,255,255,.22)}
+    @media(max-width:900px){.nav-links,.nav-cta{display:none}.hamburger{display:flex}.footer-main{grid-template-columns:1fr}}
+    @media(max-width:600px){.footer-links-grid{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+
+<div class="mob-menu" id="mobMenu">
+  <span class="mob-close" id="mobClose">✕</span>
+  <a href="index.html">Home</a>
+  <a href="products/wallet.html">Wallet</a>
+  <a href="products/xecro.html">Xecro</a>
+  <a href="products/arqasave.html">Savings</a>
+  <a href="countries.html">Countries</a>
+  <a href="faq.html">FAQ</a>
+  <a href="index.html#waitlist" class="hl">Join Waitlist</a>
+</div>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <img src="NLogo.png" alt="Nolubz" width="36" height="36"/>
+    <span class="nav-logo-text">Nolubz</span>
+  </a>
+  <div class="nav-links">
+    <a href="products/wallet.html">Wallet</a>
+    <a href="products/xecro.html">Xecro</a>
+    <a href="products/arqasave.html">Savings</a>
+    <a href="countries.html">Countries</a>
+    <a href="about.html">About</a>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <a href="faq.html" style="font-size:14px;font-weight:600;color:var(--blue-deep);text-decoration:none;padding:9px 18px;border-radius:100px;">FAQ</a>
+    <a href="index.html#waitlist" class="nav-cta">Join Waitlist</a>
+    <div class="hamburger" id="menuBtn"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <h1>Privacy Policy</h1>
+  <p>How Nolubz Network collects, uses, and protects your personal information. Plain, clear, and honest.</p>
+  <div class="updated">Last updated: July 2026</div>
+</section>
+
+<section class="content">
+  <div class="wrap">
+
+    <!-- CRITICAL NOTICE -->
+    <div class="notice">
+      <div class="notice-title">⚠️ Important — Please Read First</div>
+      <p><strong>Nolubz Network is not a bank, financial institution, money services business, payment processor, or licensed financial intermediary.</strong> Nolubz is a Software-as-a-Service (SaaS) ledger-keeping platform. We provide users with tools to record, track, monitor, and visualise the movement of their funds through third-party licensed payment providers. We do not hold, custody, store, or control user funds at any point. All actual money movement is handled exclusively by our regulated, licensed third-party payment partners. By using Nolubz, you acknowledge and agree to this fundamental distinction.</p>
+    </div>
+
+    <!-- 1 -->
+    <div class="section">
+      <div class="section-num">01</div>
+      <h2>Who We Are</h2>
+      <p>Nolubz Network ("Nolubz", "we", "us", or "our") operates the Nolubz platform — a global financial tracking and monitoring application available on Android, iOS, and web. Our registered business name is <strong>Nolubz Network</strong>.</p>
+      <p>For questions about this Privacy Policy or your personal data, contact us at <a href="mailto:support@nolubz.com" style="color:var(--blue-deep);font-weight:600;">support@nolubz.com</a>.</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 2 -->
+    <div class="section">
+      <div class="section-num">02</div>
+      <h2>What Nolubz Is — and Is Not</h2>
+      <p>We believe clarity is the foundation of trust. Before describing how we handle your data, it is essential that you understand exactly what Nolubz does and does not do.</p>
+
+      <div class="warning">
+        <p><strong>Nolubz is a No-Deposit Holding SaaS platform.</strong> This means we do not accept, hold, store, receive, transmit, or control your money at any time. The NOLZ balance displayed in your Nolubz account is a ledger representation — a record of transaction activity facilitated by third-party licensed payment providers on your behalf. Your actual funds remain with those licensed providers at all times.</p>
+      </div>
+
+      <p><strong>What Nolubz does:</strong></p>
+      <ul>
+        <li>Provides a unified interface to connect with licensed payment providers</li>
+        <li>Records and displays your transaction history in a clear, organised ledger</li>
+        <li>Enables you to monitor, track, and visualise your financial activity</li>
+        <li>Facilitates communication between you and our licensed payment partners</li>
+        <li>Provides savings goal tracking, escrow coordination, and bill payment facilitation</li>
+        <li>Generates transaction receipts, summaries, and reports for your records</li>
+      </ul>
+
+      <p><strong>What Nolubz does not do:</strong></p>
+      <ul>
+        <li>Hold, custody, or store your money</li>
+        <li>Act as a bank, credit union, or licensed financial institution</li>
+        <li>Provide financial advice, investment services, or credit facilities</li>
+        <li>Guarantee returns, interest, or yields on any balance</li>
+        <li>Issue electronic money or payment instruments</li>
+        <li>Operate as a money services business or licensed money transmitter</li>
+      </ul>
+
+      <p>All actual fund movement is processed exclusively by our regulated third-party payment partners — including but not limited to Transak, MoonPay, Kotani Pay, Yellow Card, Monnify, Paystack, Stripe, TransFi, and Crossmint. Each of these providers operates under their own regulatory frameworks, licences, and terms of service, which apply to your transactions independently of your use of Nolubz.</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 3 -->
+    <div class="section">
+      <div class="section-num">03</div>
+      <h2>Information We Collect</h2>
+      <p>We collect only what is necessary to provide you with the Nolubz platform and to comply with applicable requirements.</p>
+
+      <p><strong>Information you provide directly:</strong></p>
+      <ul>
+        <li>Full name and email address at registration</li>
+        <li>Country of residence and phone number</li>
+        <li>Identity verification documents (for KYC purposes — processed by our KYC partners)</li>
+        <li>Profile information you choose to add</li>
+        <li>Communications you send to our support team</li>
+      </ul>
+
+      <p><strong>Information generated by your use of Nolubz:</strong></p>
+      <ul>
+        <li>Transaction records — amounts, dates, types, and references</li>
+        <li>Ledger entries reflecting activity from payment providers</li>
+        <li>Savings plan details and goal progress</li>
+        <li>Escrow deal terms and status</li>
+        <li>Device information, IP address, and app usage data</li>
+        <li>Push notification tokens for transactional alerts</li>
+      </ul>
+
+      <p><strong>Information from third parties:</strong></p>
+      <ul>
+        <li>Transaction confirmations and status updates from payment providers</li>
+        <li>KYC verification results from our identity verification partners</li>
+      </ul>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 4 -->
+    <div class="section">
+      <div class="section-num">04</div>
+      <h2>How We Use Your Information</h2>
+      <p>We use your information exclusively to operate and improve the Nolubz platform. Specifically:</p>
+      <ul>
+        <li>To create and maintain your Nolubz account</li>
+        <li>To display your transaction history and ledger balance</li>
+        <li>To facilitate connections between you and licensed payment providers</li>
+        <li>To send you transactional notifications about your account activity</li>
+        <li>To verify your identity as required by our payment partners' KYC requirements</li>
+        <li>To provide customer support and respond to your enquiries</li>
+        <li>To detect, prevent, and investigate fraud or unauthorised access</li>
+        <li>To improve the Nolubz platform based on usage patterns</li>
+        <li>To comply with applicable legal and regulatory obligations</li>
+      </ul>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 5 -->
+    <div class="section">
+      <div class="section-num">05</div>
+      <h2>What We Never Do With Your Data</h2>
+      <p>We make these commitments clearly and without qualification:</p>
+      <ul>
+        <li>We will never sell your personal data to any third party</li>
+        <li>We will never share your data with advertisers for marketing purposes</li>
+        <li>We will never use your transaction data to build advertising profiles</li>
+        <li>We will never share your identity documents beyond our KYC verification partners</li>
+        <li>We will never retain data beyond the period necessary to provide our services</li>
+        <li>We will never transfer your data to unauthorised parties under any circumstances</li>
+      </ul>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 6 -->
+    <div class="section">
+      <div class="section-num">06</div>
+      <h2>Third-Party Payment Partners</h2>
+      <p>When you use Nolubz to deposit, withdraw, or transfer funds, your transaction is processed by one or more of our licensed third-party payment partners. When you interact with these partners through Nolubz, your data is also subject to their own privacy policies and terms of service.</p>
+      <p>We recommend reviewing the privacy policies of the payment providers relevant to your region. Nolubz is not responsible for the data practices of third-party providers, and your relationship with them is governed by their own terms.</p>
+      <p>We share only the minimum data necessary — typically your name, email, country, and transaction details — to facilitate your requested transaction with these providers.</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 7 -->
+    <div class="section">
+      <div class="section-num">07</div>
+      <h2>Data Security</h2>
+      <p>We implement industry-standard security measures to protect your personal information:</p>
+      <ul>
+        <li>All data transmitted between your device and our servers is encrypted using TLS</li>
+        <li>Data at rest is encrypted using AES-256</li>
+        <li>Access to user data within our team is strictly limited on a need-to-know basis</li>
+        <li>All transactions require PIN authentication before processing</li>
+        <li>We conduct regular security reviews of our infrastructure and code</li>
+        <li>Our backend infrastructure is hosted on enterprise-grade, audited cloud providers</li>
+      </ul>
+      <p>While we take every reasonable precaution, no system can guarantee absolute security. If you suspect unauthorised access to your account, contact us immediately at support@nolubz.com.</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 8 -->
+    <div class="section">
+      <div class="section-num">08</div>
+      <h2>Your Rights</h2>
+      <p>Depending on your country of residence, you may have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Access</strong> — request a copy of the personal data we hold about you</li>
+        <li><strong>Correction</strong> — request correction of inaccurate or incomplete data</li>
+        <li><strong>Deletion</strong> — request deletion of your personal data, subject to legal retention requirements</li>
+        <li><strong>Portability</strong> — request your data in a machine-readable format</li>
+        <li><strong>Objection</strong> — object to certain uses of your data</li>
+        <li><strong>Withdrawal of consent</strong> — where processing is based on consent, withdraw it at any time</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at <a href="mailto:support@nolubz.com" style="color:var(--blue-deep);font-weight:600;">support@nolubz.com</a>. We respond to all verified requests within 30 days.</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 9 -->
+    <div class="section">
+      <div class="section-num">09</div>
+      <h2>Data Retention</h2>
+      <p>We retain your personal data for as long as your Nolubz account is active, and for a reasonable period thereafter to comply with our legal obligations, resolve disputes, and enforce our agreements.</p>
+      <p>Transaction ledger records may be retained for longer periods where required by applicable financial record-keeping requirements in your jurisdiction. When your data is no longer required, we delete or anonymise it securely.</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 10 -->
+    <div class="section">
+      <div class="section-num">10</div>
+      <h2>Children's Privacy</h2>
+      <p>Nolubz is not intended for use by individuals under the age of 18. We do not knowingly collect personal data from minors. If you believe a minor has registered on our platform, contact us immediately at support@nolubz.com and we will remove their account and data promptly.</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 11 -->
+    <div class="section">
+      <div class="section-num">11</div>
+      <h2>Cookies and Tracking</h2>
+      <p>Our website uses minimal, essential cookies only — for session management and security purposes. We do not use advertising cookies, third-party tracking pixels, or behavioural analytics tools that share your data with external parties.</p>
+      <p>The Nolubz mobile app does not use cookies. App usage analytics, where collected, are anonymised and used solely to improve the product.</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 12 -->
+    <div class="section">
+      <div class="section-num">12</div>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements. When we make material changes, we will notify you through the Nolubz app and update the "Last updated" date at the top of this page.</p>
+      <p>Continued use of Nolubz after any changes constitutes your acceptance of the updated Privacy Policy. If you do not agree with any changes, you may close your account at any time.</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- 13 -->
+    <div class="section">
+      <div class="section-num">13</div>
+      <h2>Limitation of Liability</h2>
+      <p>As a ledger-keeping SaaS platform, Nolubz provides a software interface to display and track financial activity. Nolubz Network is not liable for any loss of funds, failed transactions, delays, or errors arising from the actions or omissions of third-party payment providers, blockchain networks, banking systems, or telecommunications infrastructure beyond our reasonable control.</p>
+      <p>The NOLZ balance displayed in your Nolubz account is a ledger representation of activity reported by our payment partners. Nolubz does not guarantee the accuracy, completeness, or timeliness of information provided by third-party partners.</p>
+    </div>
+    <div class="divider"></div>
+
+    <!-- Contact -->
+    <div class="contact-box">
+      <h3>Questions about this policy?</h3>
+      <p>We are committed to transparency. If anything in this policy is unclear or you have concerns about how your data is handled, reach out — we will respond within 48 hours.</p>
+      <a href="mailto:support@nolubz.com">support@nolubz.com</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="footer-main">
+      <div>
+        <a href="index.html" class="fb">
+          <img src="NLogo.png" alt="Nolubz" width="30" height="30"/>
+          <span class="fb-txt">Nolubz</span>
+        </a>
+        <p class="fd">Send, receive, save and secure —<br>anywhere in the world.</p>
+        <div class="fsoc">
+          <a href="https://x.com/nolubz" aria-label="X">𝕏</a>
+          <a href="https://linkedin.com/company/nolubz" aria-label="LinkedIn">in</a>
+          <a href="https://instagram.com/nolubz" aria-label="Instagram">ig</a>
+          <a href="https://t.me/nolubz" aria-label="Telegram">✈</a>
+        </div>
+        <div class="fbot-links">
+          <a href="mailto:support@nolubz.com">Contact</a>
+          <span class="fbot-sep">·</span>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+      <div class="footer-links-grid">
+        <div class="fcol">
+          <h4>Products</h4>
+          <a href="Products/wallet.html">NOLZ Wallet</a>
+          <a href="Products/xecro.html">Xecro Escrow</a>
+          <a href="Products/arqasave.html">ArqaSave</a>
+          <a href="Products/bills.html">Bills & Airtime</a>
+        </div>
+        <div class="fcol">
+          <h4>Platform</h4>
+          <a href="countries.html">Countries</a>
+          <a href="security.html">Security</a>
+          <a href="faq.html">FAQ</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </div>
+    <div class="fbot">
+      <span class="fcp">© 2026 Nolubz Network. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', () => document.getElementById('mainNav').classList.toggle('scrolled', scrollY > 20), {passive: true});
+  document.getElementById('menuBtn').onclick = () => document.getElementById('mobMenu').classList.add('open');
+  document.getElementById('mobClose').onclick = () => document.getElementById('mobMenu').classList.remove('open');
+</script>
+</body>
+</html>
