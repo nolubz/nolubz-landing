@@ -1,133 +1,79 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NOLZ Wallet — Global Digital Wallet | Nolubz</title>
-  <meta name="description" content="The NOLZ Wallet by Nolubz gives you a stable global wallet where 1 NOLZ always equals 1 USD. Send, receive, deposit and withdraw money in 40+ countries. Zero deposit fees. Instant transfers."/>
-  <meta name="keywords" content="global digital wallet, NOLZ wallet, international wallet app, multi-currency wallet, send money online, receive money globally, stable wallet, zero fee wallet"/>
+  <title>Security & Trust — How Nolubz Protects Your Money | Nolubz</title>
+  <meta name="description" content="Nolubz uses end-to-end encryption, KYC identity verification, transaction PIN protection, and licensed regulated payment partners to keep your money and data safe. Learn how we protect every transaction."/>
+  <meta name="keywords" content="Nolubz security, digital wallet security, KYC verification, encrypted transactions, secure money transfer, licensed payment partners, fraud protection fintech"/>
   <meta name="robots" content="index, follow"/>
-  <link rel="icon" type="image/png" sizes="32x32" href="../NIcon.png?v=3"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="../NIcon.png?v=3"/>
-  <link rel="apple-touch-icon" sizes="180x180" href="../NIcon.png?v=3"/>
-  <link rel="shortcut icon" href="../NIcon.png?v=3"/>
-  <link rel="manifest" href="../site.webmanifest"/><link rel="canonical" href="https://nolubz.com/products/wallet.html"/>
-  <meta property="og:title" content="NOLZ Wallet — Global Digital Wallet | Nolubz"/>
-  <meta property="og:description" content="1 NOLZ = 1 USD. Always. Send, receive and manage money globally with zero deposit fees."/>
-  <meta property="og:url" content="https://nolubz.com/products/wallet.html"/>
-  <meta property="og:image" content="https://nolubz.com/og-image.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="NIcon.png?v=3"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="NIcon.png?v=3"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="NIcon.png?v=3"/>
+  <link rel="shortcut icon" href="NIcon.png?v=3"/>
+  <link rel="manifest" href="site.webmanifest"/><link rel="canonical" href="https://nolubz.com/security.html"/>
+  <meta property="og:title" content="Security & Trust — How Nolubz Protects Your Money"/><meta property="og:description" content="End-to-end encryption, KYC, PIN protection and licensed partners — security built into every layer of Nolubz."/><meta property="og:url" content="https://nolubz.com/security.html"/><meta property="og:image" content="https://nolubz.com/og-image.png"/>
   
   
   
   <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://nolubz.com/"},{"@type":"ListItem","position":2,"name":"NOLZ Wallet","item":"https://nolubz.com/products/wallet.html"}]},{"@type":"Product","name":"NOLZ Wallet","description":"Global digital wallet where 1 NOLZ always equals 1 USD. Send, receive and manage money in 40+ countries with zero deposit fees.","brand":{"@type":"Brand","name":"Nolubz"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}]}</script>
   <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--navy:#080E1A;--blue-deep:#0D47A1;--blue-mid:#1565C0;--blue-vivid:#1976D2;--blue-light:#E3F2FD;--green:#10B981;--white:#fff;--off-white:#F7F9FF;--surface:#F0F4FF;--text-dark:#080E1A;--text-mid:#374151;--text-soft:#6B7280;--border:#E5EAF5;--max-w:1200px;--shadow-sm:0 2px 12px rgba(13,71,161,.08);--shadow-md:0 8px 32px rgba(13,71,161,.12);--shadow-lg:0 20px 60px rgba(13,71,161,.18)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--navy:#080E1A;--blue-deep:#0D47A1;--blue-vivid:#1976D2;--blue-light:#E3F2FD;--green:#10B981;--white:#fff;--off-white:#F7F9FF;--surface:#F0F4FF;--text-dark:#080E1A;--text-mid:#374151;--text-soft:#6B7280;--border:#E5EAF5;--max-w:1200px;--shadow-sm:0 2px 12px rgba(13,71,161,.08);--shadow-md:0 8px 32px rgba(13,71,161,.12);--shadow-lg:0 20px 60px rgba(13,71,161,.18)}
     html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif;background:#fff;color:var(--text-dark);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
     .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}.reveal.visible{opacity:1;transform:none}
-    .rl{opacity:0;transform:translateX(-36px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}.rl.visible{opacity:1;transform:none}
-    .rr{opacity:0;transform:translateX(36px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}.rr.visible{opacity:1;transform:none}
     .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}.d4{transition-delay:.32s}
-    @media(prefers-reduced-motion:reduce){.reveal,.rl,.rr{opacity:1;transform:none;transition:none}}
-    nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(13,71,161,.07);transition:box-shadow .3s}
-    nav.scrolled{box-shadow:var(--shadow-sm)}
-    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}.nav-logo img{width:36px;height:36px;object-fit:contain}
-    .nav-logo-text{font-family:'Plus Jakarta Sans',sans-serif;font-size:21px;font-weight:800;color:var(--blue-deep);letter-spacing:-.3px}
+    @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+    nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid rgba(13,71,161,.07);transition:box-shadow .3s}nav.scrolled{box-shadow:var(--shadow-sm)}
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}.nav-logo img{width:36px;height:36px;object-fit:contain}.nav-logo-text{font-family:'Plus Jakarta Sans',sans-serif;font-size:21px;font-weight:800;color:var(--blue-deep);letter-spacing:-.3px}
     .nav-links{display:flex;gap:28px;align-items:center}.nav-links a{font-size:14px;font-weight:500;color:var(--text-mid);text-decoration:none;transition:color .2s}.nav-links a:hover,.nav-links a.active{color:var(--blue-deep)}
-    .nav-actions{display:flex;align-items:center;gap:10px}
-    .nav-ghost{font-size:14px;font-weight:600;color:var(--blue-deep);text-decoration:none;padding:9px 18px;border-radius:100px;transition:background .2s}.nav-ghost:hover{background:var(--blue-light)}
+    .nav-actions{display:flex;align-items:center;gap:10px}.nav-ghost{font-size:14px;font-weight:600;color:var(--blue-deep);text-decoration:none;padding:9px 18px;border-radius:100px;transition:background .2s}.nav-ghost:hover{background:var(--blue-light)}
     .nav-cta{background:var(--blue-deep);color:#fff;padding:10px 22px;border-radius:100px;font-size:14px;font-weight:700;text-decoration:none;transition:transform .15s,box-shadow .15s;box-shadow:0 2px 12px rgba(13,71,161,.28)}.nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(13,71,161,.38)}
     .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}.hamburger span{display:block;width:22px;height:2px;background:var(--text-dark);border-radius:2px}
-    .mob-menu{display:none;position:fixed;inset:0;z-index:999;background:rgba(8,14,26,.97);backdrop-filter:blur(16px);flex-direction:column;align-items:center;justify-content:center;gap:28px}.mob-menu.open{display:flex}
-    .mob-menu a{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:700;color:#fff;text-decoration:none}.mob-menu a.hl{color:#FCD34D}
-    .mob-close{position:absolute;top:24px;right:5%;font-size:28px;color:#fff;cursor:pointer}
+    .mob-menu{display:none;position:fixed;inset:0;z-index:999;background:rgba(8,14,26,.97);backdrop-filter:blur(16px);flex-direction:column;align-items:center;justify-content:center;gap:28px}.mob-menu.open{display:flex}.mob-menu a{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:700;color:#fff;text-decoration:none}.mob-menu a.hl{color:#FCD34D}.mob-close{position:absolute;top:24px;right:5%;font-size:28px;color:#fff;cursor:pointer}
     .wrap{max-width:var(--max-w);margin:0 auto}
-    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue-deep);margin-bottom:14px}.eyebrow::before{content:'';display:block;width:18px;height:2px;background:var(--blue-deep);border-radius:2px}
-    .ew{color:#90CAF9}.ew::before{background:#90CAF9}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue-deep);margin-bottom:14px}.eyebrow::before{content:'';display:block;width:18px;height:2px;background:var(--blue-deep);border-radius:2px}.ew{color:#90CAF9}.ew::before{background:#90CAF9}
     .h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(28px,3.8vw,50px);font-weight:800;line-height:1.1;color:var(--text-dark);letter-spacing:-1px}.h2 .hl{color:var(--blue-deep)}.h2w{color:#fff}
     .lead{font-size:clamp(15px,1.4vw,17px);color:var(--text-soft);line-height:1.8;margin-top:14px}.leadw{color:rgba(255,255,255,.58)}
     .btn-blue{display:inline-flex;align-items:center;gap:8px;background:var(--blue-deep);color:#fff;padding:14px 28px;border-radius:100px;font-size:15px;font-weight:700;text-decoration:none;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 18px rgba(13,71,161,.28);font-family:'Plus Jakarta Sans',sans-serif}.btn-blue:hover{transform:translateY(-2px);box-shadow:0 8px 26px rgba(13,71,161,.38)}
     .btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--blue-deep);padding:14px 28px;border-radius:100px;font-size:15px;font-weight:700;text-decoration:none;transition:transform .15s;font-family:'Plus Jakarta Sans',sans-serif;box-shadow:0 4px 18px rgba(0,0,0,.15)}.btn-white:hover{transform:translateY(-2px)}
-    .page-hero{padding:140px 5% 80px;background:linear-gradient(135deg,#080E1A 0%,#0D2B6B 50%,#0D47A1 100%);position:relative;overflow:hidden}
-    .page-hero::before{content:'';position:absolute;width:600px;height:600px;top:-200px;right:-100px;background:radial-gradient(ellipse,rgba(33,150,243,.15) 0%,transparent 70%);pointer-events:none}
-    .page-hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
-    .page-hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:6px 16px;border-radius:100px;color:rgba(255,255,255,.88);font-size:12px;font-weight:600;margin-bottom:24px;backdrop-filter:blur(8px)}
-    .page-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(34px,5vw,62px);font-weight:800;line-height:1.06;color:#fff;letter-spacing:-1.5px;margin-bottom:20px}
-    .page-hero h1 span{color:#90CAF9}
-    .page-hero-sub{font-size:clamp(15px,1.5vw,18px);color:rgba(255,255,255,.65);line-height:1.8;margin-bottom:32px}
-    .page-hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-    /* Wallet card mock */
-    .wallet-mock{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:28px;backdrop-filter:blur(12px)}
-    .wm-lbl{font-size:11px;font-weight:600;color:rgba(255,255,255,.38);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
-    .wm-balance{font-family:'Plus Jakarta Sans',sans-serif;font-size:42px;font-weight:800;color:#fff;line-height:1;margin-bottom:4px}
-    .wm-nolz{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:100px;padding:4px 12px;font-size:11px;font-weight:700;color:#FCD34D;margin-bottom:20px}
-    .wm-actions{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:20px}
-    .wm-action{background:rgba(255,255,255,.08);border-radius:12px;padding:12px 8px;text-align:center;transition:background .2s;cursor:default}
-    .wm-action:hover{background:rgba(255,255,255,.14)}
-    .wm-action-ico{font-size:18px;margin-bottom:5px}
-    .wm-action-lbl{font-size:10px;font-weight:600;color:rgba(255,255,255,.6)}
-    .wm-tx-title{font-size:11px;font-weight:700;color:rgba(255,255,255,.4);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
-    .wm-tx{display:flex;align-items:center;gap:10px;margin-bottom:8px;padding:10px;background:rgba(255,255,255,.05);border-radius:10px}
-    .wm-tx-ico{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
-    .wm-tx-inf{flex:1}.wm-tx-nm{font-size:12px;font-weight:600;color:rgba(255,255,255,.78)}.wm-tx-dt{font-size:10px;color:rgba(255,255,255,.32)}
-    .wm-tx-am{font-size:13px;font-weight:700}
-    .gc{color:#4ADE80}.rc{color:#F87171}
-    /* FEATURES */
-    .wallet-features{padding:92px 5%;background:var(--off-white)}
-    .wf-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:52px}
-    .wf-card{background:#fff;border-radius:20px;padding:30px 26px;border:1.5px solid var(--border);transition:all .25s}
-    .wf-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
-    .wf-ico{font-size:32px;margin-bottom:14px;display:block}
-    .wf-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;color:var(--text-dark);margin-bottom:8px}
-    .wf-card p{font-size:14px;color:var(--text-soft);line-height:1.7}
-    /* NOLZ EXPLAINER */
-    .nolz-explainer{padding:92px 5%;background:#fff}
-    .nolz-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-    .nolz-card{background:linear-gradient(135deg,#080E1A,#0D2B6B);border-radius:24px;padding:40px;position:relative;overflow:hidden}
-    .nolz-card::before{content:'';position:absolute;width:300px;height:300px;top:-100px;right:-80px;background:radial-gradient(ellipse,rgba(33,150,243,.2),transparent 70%)}
-    .nolz-rate{font-family:'Plus Jakarta Sans',sans-serif;font-size:48px;font-weight:800;color:#FCD34D;line-height:1;margin-bottom:8px}
-    .nolz-eq{font-size:14px;color:rgba(255,255,255,.5);margin-bottom:24px}
-    .nolz-fact{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px;padding:14px;background:rgba(255,255,255,.06);border-radius:12px}
-    .nolz-fact-ico{font-size:18px;flex-shrink:0;margin-top:2px}
-    .nolz-fact-text h5{font-family:'Plus Jakarta Sans',sans-serif;font-size:13px;font-weight:700;color:rgba(255,255,255,.88);margin-bottom:3px}
-    .nolz-fact-text p{font-size:12px;color:rgba(255,255,255,.46);line-height:1.5}
-    /* SEND/RECEIVE */
-    .send-receive{padding:92px 5%;background:var(--off-white)}
-    .sr-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:52px}
-    .sr-card{border-radius:22px;padding:36px 32px;border:1.5px solid var(--border);background:#fff;transition:all .25s}
-    .sr-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
-    .sr-card.dark{background:linear-gradient(135deg,#080E1A,#0D2B6B);border-color:transparent}
-    .sr-card-ico{width:56px;height:56px;margin-bottom:20px;object-fit:contain}
-    .sr-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:22px;font-weight:800;margin-bottom:12px}
-    .sr-card.dark h3{color:#fff}
-    .sr-card p{font-size:14px;color:var(--text-soft);line-height:1.7;margin-bottom:20px}
-    .sr-card.dark p{color:rgba(255,255,255,.55)}
-    .sr-features{display:flex;flex-direction:column;gap:8px}
-    .sr-feat{font-size:13px;color:var(--text-mid);display:flex;align-items:center;gap:8px}
-    .sr-feat::before{content:'✓';color:var(--blue-deep);font-weight:800;font-size:12px}
-    .sr-card.dark .sr-feat{color:rgba(255,255,255,.65)}.sr-card.dark .sr-feat::before{color:#4ADE80}
-    /* FAQ */
-    .faq{padding:92px 5%;background:var(--off-white)}
-    .faq-hdr{text-align:center;margin-bottom:48px}
-    .faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
-    .fitem{background:#fff;border-radius:16px;border:1.5px solid var(--border);overflow:hidden;transition:border-color .2s,box-shadow .2s}.fitem.open{border-color:var(--blue-vivid);box-shadow:var(--shadow-sm)}
-    .fq{display:flex;align-items:center;justify-content:space-between;padding:20px 26px;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;color:var(--text-dark);gap:14px;user-select:none}
-    .fchv{width:26px;height:26px;border-radius:50%;background:var(--surface);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;transition:background .2s,transform .3s}.fitem.open .fchv{background:var(--blue-deep);color:#fff;transform:rotate(180deg)}
-    .fa{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.16,1,.3,1),padding .3s;padding:0 26px;font-size:14px;color:var(--text-soft);line-height:1.75}.fitem.open .fa{max-height:300px;padding:0 26px 22px}
-    .cta-band{padding:80px 5%;background:#fff;text-align:center}
+    .page-hero{padding:140px 5% 80px;background:linear-gradient(135deg,#080E1A 0%,#0D2B6B 50%,#0D47A1 100%);text-align:center;position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;width:700px;height:700px;top:-200px;left:50%;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(33,150,243,.15) 0%,transparent 70%);pointer-events:none}
+    .page-hero-inner{position:relative;z-index:1;max-width:680px;margin:0 auto}
+    .page-hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(36px,5.5vw,68px);font-weight:800;color:#fff;letter-spacing:-2px;line-height:1.06;margin-bottom:20px}.page-hero h1 span{color:#90CAF9}
+    .hero-sub{font-size:clamp(15px,1.5vw,18px);color:rgba(255,255,255,.62);line-height:1.8;max-width:540px;margin:0 auto 36px}
+    .sec-pillars{padding:80px 5%;background:var(--off-white)}
+    .pillars-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:52px}
+    .pillar{background:#fff;border-radius:20px;padding:30px 26px;border:1.5px solid var(--border);transition:all .25s}
+    .pillar:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
+    .pillar-ico{font-size:32px;margin-bottom:14px;display:block}
+    .pillar h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;color:var(--text-dark);margin-bottom:9px}
+    .pillar p{font-size:14px;color:var(--text-soft);line-height:1.7}
+    .partners{padding:80px 5%;background:#fff;text-align:center}
+    .partners-inner{max-width:var(--max-w);margin:0 auto}
+    .partners-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:44px}
+    .partner-card{border:1.5px solid var(--border);border-radius:16px;padding:24px 20px;text-align:center;transition:all .2s}
+    .partner-card:hover{border-color:var(--blue-vivid);background:var(--blue-light);transform:translateY(-3px)}
+    .partner-ico{font-size:28px;margin-bottom:10px;display:block}
+    .partner-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;color:var(--text-dark);margin-bottom:5px}
+    .partner-type{font-size:12px;color:var(--text-soft)}
+    .commitment{padding:80px 5%;background:linear-gradient(135deg,#080E1A,#0D2B6B)}
+    .comm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:48px}
+    .comm-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:26px 22px}
+    .comm-ico{font-size:26px;margin-bottom:11px;display:block}
+    .comm-card h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;color:#fff;margin-bottom:6px}
+    .comm-card p{font-size:13px;color:rgba(255,255,255,.46);line-height:1.65}
+    .cta-band{padding:80px 5%;background:var(--off-white);text-align:center}
     .cta-band h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(26px,4vw,48px);font-weight:800;color:var(--text-dark);letter-spacing:-1px;margin-bottom:14px}
     .cta-band p{font-size:16px;color:var(--text-soft);max-width:480px;margin:0 auto 32px;line-height:1.75}
     footer{background:#080E1A;padding:52px 5% 0}
     .fg{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr 1fr;gap:32px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.06)}
     .fb{display:flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:12px}.fb img{width:28px;height:28px;object-fit:contain}.fb-txt{font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;font-weight:800;color:#fff}
     .fd{font-size:13px;color:rgba(255,255,255,.36);line-height:1.7;max-width:240px}
-    .fcol h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,.8);letter-spacing:.4px;margin-bottom:14px}
-    .fcol a{display:block;font-size:13px;color:rgba(255,255,255,.34);text-decoration:none;margin-bottom:9px;transition:color .2s}.fcol a:hover{color:rgba(255,255,255,.78)}
-    .fbot{display:flex;align-items:center;justify-content:space-between;padding:18px 0;flex-wrap:wrap;gap:8px}
-    .fcp{font-size:12px;color:rgba(255,255,255,.18)}.fnolz{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;color:#FCD34D;letter-spacing:2px;border:1px solid rgba(252,211,77,.24);padding:3px 8px;border-radius:5px}
+    .fcol h4{font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,.8);letter-spacing:.4px;margin-bottom:14px}.fcol a{display:block;font-size:13px;color:rgba(255,255,255,.34);text-decoration:none;margin-bottom:9px;transition:color .2s}.fcol a:hover{color:rgba(255,255,255,.78)}
+    .fbot{display:flex;align-items:center;justify-content:space-between;padding:18px 0;flex-wrap:wrap;gap:8px}.fcp{font-size:12px;color:rgba(255,255,255,.18)}.fnolz{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;color:#FCD34D;letter-spacing:2px;border:1px solid rgba(252,211,77,.24);padding:3px 8px;border-radius:5px}
     .flinks{display:flex;gap:16px}.flinks a{font-size:12px;color:rgba(255,255,255,.18);text-decoration:none;transition:color .2s}.flinks a:hover{color:rgba(255,255,255,.56)}
-    @media(max-width:900px){.nav-links,.nav-ghost{display:none}.hamburger{display:flex}.page-hero-inner{grid-template-columns:1fr}.nolz-inner{grid-template-columns:1fr}.sr-grid{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr;gap:22px}}
+    @media(max-width:900px){.nav-links,.nav-ghost{display:none}.hamburger{display:flex}.fg{grid-template-columns:1fr 1fr;gap:22px}}
     @media(max-width:600px){.fg{grid-template-columns:1fr}.fbot{flex-direction:column;align-items:flex-start}}
   
     /* ── FOOTER ── */
@@ -166,6 +112,20 @@
       .hamburger{display:flex !important}
     }
 
+  
+    /* ── PARTNERS MARQUEE ── */
+    .partners-section{padding:72px 5%;background:#fff;overflow:hidden}
+    .marquee-wrap{position:relative;overflow:hidden;mask-image:linear-gradient(90deg,transparent 0%,black 10%,black 90%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,black 10%,black 90%,transparent 100%);margin-top:0}
+    .marquee-track{display:flex;gap:16px;width:max-content;animation:marquee 28s linear infinite}
+    .marquee-track:hover{animation-play-state:paused}
+    @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .partner-pill{display:flex;align-items:center;gap:12px;background:#fff;border:1.5px solid var(--border);border-radius:100px;padding:14px 24px;white-space:nowrap;transition:all .2s;flex-shrink:0}
+    .partner-pill:hover{border-color:var(--blue-vivid);background:var(--blue-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+    .pp-ico{font-size:22px}
+    .pp-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:800;color:var(--text-dark)}
+    .pp-type{font-size:12px;color:var(--text-soft);border-left:1px solid var(--border);padding-left:12px;margin-left:4px}
+    @media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
       .fbot-links{display:flex;align-items:center;gap:12px}
     .fbot-links a{font-size:14px;font-weight:600;color:rgba(255,255,255,.7);text-decoration:none;letter-spacing:.2px;transition:color .2s}
     .fbot-links a:hover{color:#fff}
@@ -178,150 +138,104 @@
 </head>
 <body>
 <div class="mob-menu" id="mobMenu"><span class="mob-close" id="mobClose">✕</span>
-  <a href="../index.html">Home</a>
-  <a href="../about.html">About</a>
-  <a href="../products/wallet.html">Wallet</a>
-  <a href="../products/xecro.html">Xecro</a>
-  <a href="../products/arqasave.html">ArqaSave</a>
-  <a href="../countries.html">Countries</a>
-  <a href="../faq.html">FAQ</a>
-  <a href="../index.html#waitlist" class="hl">Launch App</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="products/wallet.html">Wallet</a>
+  <a href="products/xecro.html">Xecro</a>
+  <a href="products/arqasave.html">ArqaSave</a>
+  <a href="countries.html">Countries</a>
+  <a href="faq.html">FAQ</a>
+  <a href="https://app.nolubz.com" class="hl">Launch App</a>
 </div>
 <nav id="mainNav">
-  <a href="../index.html" class="nav-logo"><img src="../NLogo.png" alt="Nolubz" width="36" height="36"/><span class="nav-logo-text">Nolubz</span></a>
-  <div class="nav-links"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../products/wallet.html">Wallet</a><a href="../products/xecro.html">Xecro</a><a href="../products/arqasave.html">ArqaSave</a><a href="../countries.html">Countries</a></div>
-  <div class="nav-actions"><a href="../faq.html" class="nav-ghost">FAQ</a><a href="../index.html#waitlist" class="nav-cta">Launch App</a><div class="hamburger" id="menuBtn"><span></span><span></span><span></span></div></div>
+  <a href="index.html" class="nav-logo"><img src="NLogo.png" alt="Nolubz" width="36" height="36"/><span class="nav-logo-text">Nolubz</span></a>
+  <div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="products/wallet.html">Wallet</a><a href="products/xecro.html">Xecro</a><a href="products/arqasave.html">ArqaSave</a><a href="countries.html">Countries</a></div>
+  <div class="nav-actions"><a href="faq.html" class="nav-ghost">FAQ</a><a href="https://app.nolubz.com" class="nav-cta">Launch App</a><div class="hamburger" id="menuBtn"><span></span><span></span><span></span></div></div>
 </nav>
 
 <section class="page-hero">
-  <div class="wrap">
-    <div class="page-hero-inner">
-      <div>
-        <div class="page-hero-badge"><img src="../Wallet.png" alt="" width="18" height="18" style="object-fit:contain;"/> NOLZ Wallet</div>
-        <h1>One wallet. <span>Everyday financial freedom.</span></h1>
-        <p class="page-hero-sub">Send and receive money globally. Save, manage, and move your finances from one secure platform. 1 NOLZ always equals 1 USD — no volatility, no surprises, ever.</p>
-        <div class="page-hero-actions">
-          <a href="../index.html#waitlist" class="btn-white">Open your wallet →</a>
-        </div>
-      </div>
-      <div class="wallet-mock">
-        <div class="wm-lbl">Total Balance</div>
-        <div class="wm-balance" id="wmBal">$0.00</div>
-        <div class="wm-nolz">⬡ 1 NOLZ = $1.00 USD · Always</div>
-        <div class="wm-actions">
-          <div class="wm-action"><div class="wm-action-ico">↑</div><div class="wm-action-lbl">Send</div></div>
-          <div class="wm-action"><div class="wm-action-ico">↓</div><div class="wm-action-lbl">Receive</div></div>
-          <div class="wm-action"><div class="wm-action-ico">+</div><div class="wm-action-lbl">Top Up</div></div>
-          <div class="wm-action"><div class="wm-action-ico">⇅</div><div class="wm-action-lbl">Withdraw</div></div>
-        </div>
-        <div class="wm-tx-title">Recent Transactions</div>
-        <div class="wm-tx"><div class="wm-tx-ico" style="background:rgba(74,222,128,.14);">↑</div><div class="wm-tx-inf"><div class="wm-tx-nm">Received from Paris</div><div class="wm-tx-dt">Today, 10:42 AM</div></div><div class="wm-tx-am gc">+$500.00</div></div>
-        <div class="wm-tx"><div class="wm-tx-ico" style="background:rgba(248,113,113,.14);">↓</div><div class="wm-tx-inf"><div class="wm-tx-nm">Sent to Manila</div><div class="wm-tx-dt">Today, 09:15 AM</div></div><div class="wm-tx-am rc">−$120.00</div></div>
-        <div class="wm-tx"><div class="wm-tx-ico" style="background:rgba(74,222,128,.14);">↑</div><div class="wm-tx-inf"><div class="wm-tx-nm">Deposit via card</div><div class="wm-tx-dt">Yesterday</div></div><div class="wm-tx-am gc">+$1,000.00</div></div>
-      </div>
-    </div>
+  <div class="page-hero-inner">
+    <h1>Your money is safe. <span>We built it that way.</span></h1>
+    <p class="hero-sub">Security is not a feature at Nolubz — it is the foundation. Every decision, every architecture choice, every partner we work with is chosen to protect your money and your data.</p>
+    <a href="https://app.nolubz.com" class="btn-white">Join with confidence →</a>
   </div>
 </section>
 
-<section class="wallet-features">
+<section class="sec-pillars">
   <div class="wrap">
     <div class="reveal" style="text-align:center;margin-bottom:52px;">
-      <div class="eyebrow" style="justify-content:center;">Wallet features</div>
-      <h2 class="h2" style="text-align:center;">Everything your wallet <span class="hl">should be.</span></h2>
-      <p class="lead" style="max-width:500px;margin:14px auto 0;text-align:center;">Built for people who move, live, and work across borders — the NOLZ Wallet keeps your money stable and always accessible.</p>
+      <div class="eyebrow" style="justify-content:center;">Security pillars</div>
+      <h2 class="h2" style="text-align:center;">Six layers of <span class="hl">protection.</span></h2>
+      <p class="lead" style="max-width:500px;margin:14px auto 0;text-align:center;">Every transaction on Nolubz passes through multiple independent security checks before it moves a single cent.</p>
     </div>
-    <div class="wf-grid">
-      <div class="wf-card reveal d1"><span class="wf-ico">⚡</span><h3>Instant Transfers</h3><p>Send money to anyone on Nolubz instantly — no waiting, no delays. Whether they're across the street or across the world.</p></div>
-      <div class="wf-card reveal d2"><span class="wf-ico">🔒</span><h3>Stable Balance</h3><p>1 NOLZ always equals 1 USD. Your wallet balance never fluctuates due to exchange rates — what you put in is what you see.</p></div>
-      <div class="wf-card reveal d3"><span class="wf-ico">🌍</span><h3>Global Reach</h3><p>Send and receive across 40+ countries. Your NOLZ balance works the same everywhere — no country-specific restrictions.</p></div>
-      <div class="wf-card reveal d4"><span class="wf-ico">🆓</span><h3>Zero Deposit Fees</h3><p>Add money to your wallet for free — always. Via bank transfer, card, or crypto. No deposit fee, ever.</p></div>
-      <div class="wf-card reveal"><span class="wf-ico">📱</span><h3>Transaction History</h3><p>A full, clear history of every credit and debit. Filter by type, date, or amount — your ledger is always accurate.</p></div>
-      <div class="wf-card reveal d1"><span class="wf-ico">🔔</span><h3>Real-Time Alerts</h3><p>Instant push notifications for every wallet movement. You always know exactly what's happening with your money.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="nolz-explainer">
-  <div class="wrap">
-    <div class="nolz-inner">
-      <div class="nolz-card reveal rl">
-        <div class="nolz-rate">1 NOLZ</div>
-        <div class="nolz-eq">= 1 USDT = 1 USD · Always. Forever.</div>
-        <div class="nolz-fact"><span class="nolz-fact-ico">🔐</span><div class="nolz-fact-text"><h5>Permanently stable</h5><p>Your balance never loses value inside the platform due to exchange rate changes.</p></div></div>
-        <div class="nolz-fact"><span class="nolz-fact-ico">💱</span><div class="nolz-fact-text"><h5>Conversion at edges</h5><p>Currency conversion happens only when you deposit or withdraw in local currency — giving you a predictable, stable core balance.</p></div></div>
-        <div class="nolz-fact"><span class="nolz-fact-ico">🌍</span><div class="nolz-fact-text"><h5>Universal value</h5><p>Every Nolubz user in every country sees the same NOLZ value — enabling truly global, friction-free transfers.</p></div></div>
-      </div>
-      <div class="reveal rr">
-        <div class="eyebrow">Why NOLZ?</div>
-        <h2 class="h2">A wallet that always <span class="hl">tells the truth.</span></h2>
-        <p class="lead">Traditional wallets hide exchange rate losses in confusing conversion fees. NOLZ is different — your balance is anchored to USD permanently. You always know exactly what you have.</p>
-        <p class="lead" style="margin-top:12px;">When you send NOLZ to anyone anywhere in the world, they receive the exact amount you sent — no hidden deductions, no surprise exchange losses mid-transfer.</p>
-        <a href="../index.html#waitlist" class="btn-blue" style="margin-top:28px;">Open your NOLZ wallet →</a>
-      </div>
+    <div class="pillars-grid">
+      <div class="pillar reveal d1"><span class="pillar-ico">🔐</span><h3>End-to-End Encryption</h3><p>Every transaction, message, and user record is encrypted in transit and at rest using AES-256 — the same standard used by global financial institutions and governments.</p></div>
+      <div class="pillar reveal d2"><span class="pillar-ico">🪪</span><h3>KYC Identity Verification</h3><p>Every Nolubz user undergoes multi-tier Know Your Customer (KYC) verification. This ensures only real, verified individuals can access and move funds on the platform.</p></div>
+      <div class="pillar reveal d3"><span class="pillar-ico">🔑</span><h3>Transaction PIN</h3><p>Every payment, transfer, and withdrawal requires your personal PIN. Nothing leaves your wallet without your explicit, active approval — every single time.</p></div>
+      <div class="pillar reveal d4"><span class="pillar-ico">🔔</span><h3>Real-Time Alerts</h3><p>Every movement in your wallet triggers an instant push notification. You are always the first to know about any activity — and anything unexpected can be reported immediately.</p></div>
+      <div class="pillar reveal"><span class="pillar-ico">📊</span><h3>Transparent Ledger</h3><p>Every debit and credit is recorded with a complete, immutable audit trail. Your transaction history is always accurate, complete, and available to review at any time.</p></div>
+      <div class="pillar reveal d1"><span class="pillar-ico">🛡</span><h3>Fraud Monitoring</h3><p>Automated systems monitor every transaction for unusual patterns. Suspicious activity triggers immediate holds and user notifications — before damage can occur.</p></div>
     </div>
   </div>
 </section>
 
-<section class="send-receive">
-  <div class="wrap">
-    <div class="reveal" style="text-align:center;margin-bottom:52px;">
-      <div class="eyebrow" style="justify-content:center;">Send & Receive</div>
-      <h2 class="h2" style="text-align:center;">Money that moves <span class="hl">as fast as you do.</span></h2>
-    </div>
-    <div class="sr-grid">
-      <div class="sr-card dark reveal rl">
-        <img src="../Send.png" alt="Send money" class="sr-card-ico" width="56" height="56" loading="lazy"/>
-        <h3>Send</h3>
-        <p>Transfer NOLZ to anyone, anywhere in the world. Enter their wallet address or username, confirm your PIN, and it's done — instantly.</p>
-        <div class="sr-features">
-          <div class="sr-feat">Send to any Nolubz wallet globally</div>
-          <div class="sr-feat">Instant confirmation</div>
-          <div class="sr-feat">PIN-protected every time</div>
-          <div class="sr-feat">Full receipt generated automatically</div>
+    <!-- PARTNERS MARQUEE -->
+    <section class="partners-section" aria-label="Trusted payment partners">
+      <div class="wrap">
+        <div class="reveal" style="text-align:center;margin-bottom:48px;">
+          <div class="eyebrow" style="justify-content:center;">Trusted partners</div>
+          <h2 class="h2" style="text-align:center;">We only work with the <span class="hl">best.</span></h2>
+          <p class="lead" style="max-width:500px;margin:14px auto 0;text-align:center;">Every payment partner on the Nolubz platform is licensed, regulated, and audited worldwide.</p>
+        </div>
+        <div class="marquee-wrap">
+          <div class="marquee-track" id="marqueeTrack">
+            <div class="partner-pill"><span class="pp-ico">💳</span><span class="pp-name">Stripe</span><span class="pp-type">Global Payments</span></div>
+            <div class="partner-pill"><span class="pp-ico">🔷</span><span class="pp-name">Crossmint</span><span class="pp-type">Digital Assets</span></div>
+            <div class="partner-pill"><span class="pp-ico">🌐</span><span class="pp-name">TransFi</span><span class="pp-type">Global Fiat Rails</span></div>
+            <div class="partner-pill"><span class="pp-ico">💚</span><span class="pp-name">Paystack</span><span class="pp-type">Payment Gateway</span></div>
+            <div class="partner-pill"><span class="pp-ico">📱</span><span class="pp-name">Reloadly</span><span class="pp-type">Airtime & Data</span></div>
+            <div class="partner-pill"><span class="pp-ico">🌍</span><span class="pp-name">Yellow Card</span><span class="pp-type">Africa Payouts</span></div>
+            <div class="partner-pill"><span class="pp-ico">📲</span><span class="pp-name">Kotani Pay</span><span class="pp-type">Mobile Money</span></div>
+            <div class="partner-pill"><span class="pp-ico">🌎</span><span class="pp-name">dLocal</span><span class="pp-type">EM Payments</span></div>
+            <div class="partner-pill"><span class="pp-ico">📡</span><span class="pp-name">DT One</span><span class="pp-type">Global Top-Up</span></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="partner-pill"><span class="pp-ico">💳</span><span class="pp-name">Stripe</span><span class="pp-type">Global Payments</span></div>
+            <div class="partner-pill"><span class="pp-ico">🔷</span><span class="pp-name">Crossmint</span><span class="pp-type">Digital Assets</span></div>
+            <div class="partner-pill"><span class="pp-ico">🌐</span><span class="pp-name">TransFi</span><span class="pp-type">Global Fiat Rails</span></div>
+            <div class="partner-pill"><span class="pp-ico">💚</span><span class="pp-name">Paystack</span><span class="pp-type">Payment Gateway</span></div>
+            <div class="partner-pill"><span class="pp-ico">📱</span><span class="pp-name">Reloadly</span><span class="pp-type">Airtime & Data</span></div>
+            <div class="partner-pill"><span class="pp-ico">🌍</span><span class="pp-name">Yellow Card</span><span class="pp-type">Africa Payouts</span></div>
+            <div class="partner-pill"><span class="pp-ico">📲</span><span class="pp-name">Kotani Pay</span><span class="pp-type">Mobile Money</span></div>
+            <div class="partner-pill"><span class="pp-ico">🌎</span><span class="pp-name">dLocal</span><span class="pp-type">EM Payments</span></div>
+            <div class="partner-pill"><span class="pp-ico">📡</span><span class="pp-name">DT One</span><span class="pp-type">Global Top-Up</span></div>
+          </div>
         </div>
       </div>
-      <div class="sr-card reveal rr">
-        <img src="../Receive.png" alt="Receive money" class="sr-card-ico" width="56" height="56" loading="lazy"/>
-        <h3>Receive</h3>
-        <p>Share your unique wallet address or QR code and receive NOLZ from anyone in the world — immediately credited to your balance.</p>
-        <div class="sr-features">
-          <div class="sr-feat">Unique wallet address per user</div>
-          <div class="sr-feat">QR code sharing</div>
-          <div class="sr-feat">Instant balance credit</div>
-          <div class="sr-feat">Notification on every receipt</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="faq">
+<section class="commitment">
   <div class="wrap">
-    <div class="faq-hdr reveal"><div class="eyebrow" style="justify-content:center;">FAQ</div><h2 class="h2" style="text-align:center;">Wallet questions, <span class="hl">answered.</span></h2></div>
-    <div class="faq-list">
-      <div class="fitem"><div class="fq" onclick="tf(this)">Is there a fee to deposit money?<span class="fchv">▾</span></div><div class="fa">No. Deposits into your NOLZ Wallet are always completely free — 0% deposit fee, no minimum, no hidden charges. You can add funds via bank transfer, debit/credit card, or crypto.</div></div>
-      <div class="fitem"><div class="fq" onclick="tf(this)">What does 1 NOLZ = 1 USD really mean?<span class="fchv">▾</span></div><div class="fa">It means your balance never fluctuates inside the platform. 1 NOLZ is permanently pegged to 1 USDT which equals 1 USD. Currency conversion only happens at the deposit or withdrawal point — your internal balance is always stable.</div></div>
-      <div class="fitem"><div class="fq" onclick="tf(this)">How do I send money from my wallet?<span class="fchv">▾</span></div><div class="fa">Tap Send in your dashboard, enter the recipient's wallet address or username, enter the amount in NOLZ, confirm with your PIN, and the transfer is done instantly.</div></div>
-      <div class="fitem"><div class="fq" onclick="tf(this)">Is there a withdrawal fee?<span class="fchv">▾</span></div><div class="fa">Yes. Withdrawals carry a small fee starting at 0.5%, which decreases as your monthly transaction volume increases. The fee is always shown clearly before you confirm — no surprises.</div></div>
-      <div class="fitem"><div class="fq" onclick="tf(this)">How do I receive money?<span class="fchv">▾</span></div><div class="fa">Share your unique NOLZ wallet address or QR code with the sender. Once they send, the funds appear in your wallet instantly with a push notification.</div></div>
+    <div class="reveal" style="text-align:center;margin-bottom:48px;">
+      <div class="eyebrow ew" style="justify-content:center;">Our commitment</div>
+      <h2 class="h2 h2w" style="text-align:center;">What we promise you. <span style="color:#90CAF9;">Always.</span></h2>
+    </div>
+    <div class="comm-grid">
+      <div class="comm-card reveal d1"><span class="comm-ico">🔒</span><h4>Your data is never sold</h4><p>Nolubz will never sell, rent, or share your personal data with advertisers or third parties for marketing purposes.</p></div>
+      <div class="comm-card reveal d2"><span class="comm-ico">💰</span><h4>Your funds are protected</h4><p>Customer funds are held in segregated accounts — separate from Nolubz operational funds — at all times.</p></div>
+      <div class="comm-card reveal d3"><span class="comm-ico">📣</span><h4>Transparent about fees</h4><p>Every fee is shown clearly before you confirm any transaction. No hidden charges, no surprises on your statement.</p></div>
+      <div class="comm-card reveal d4"><span class="comm-ico">⚡</span><h4>Fast incident response</h4><p>In the event of any security concern, our team responds immediately — with clear communication at every step.</p></div>
     </div>
   </div>
 </section>
 
-<section class="download-strip" style="padding:60px 5%;background:linear-gradient(135deg,#080E1A,#0D2B6B);text-align:center;"><div style="max-width:800px;margin:0 auto;"><p style="font-family:Plus Jakarta Sans,sans-serif;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#90CAF9;margin-bottom:12px;">GET THE APP</p><h2 style="font-family:Plus Jakarta Sans,sans-serif;font-size:clamp(24px,3.5vw,40px);font-weight:800;color:#fff;letter-spacing:-1px;margin-bottom:16px;">The full Nolubz experience<br>is in your pocket.</h2><p style="font-size:15px;color:rgba(255,255,255,.5);margin-bottom:32px;line-height:1.75;">Send money, save, protect deals and pay bills — all from one beautifully designed app. Available on Android &amp; iOS.</p><div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;"><a href='https://play.google.com/store/apps/details?id=com.nolubz.app' style="display:inline-flex;align-items:center;gap:12px;background:#1a1a2e;border:1.5px solid rgba(255,255,255,.2);border-radius:14px;padding:13px 22px;text-decoration:none;transition:transform .15s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'"><svg width='20' height='20' viewBox='0 0 24 24' fill='white'><path d='M3.18 23.5c.34.19.72.25 1.09.19L15.5 12 4.27.31A1.83 1.83 0 003.18.5C2.46.91 2 1.7 2 2.56v18.88c0 .86.46 1.65 1.18 2.06z'/></svg><div style='text-align:left'><div style='font-size:10px;color:rgba(255,255,255,.5);'>Get it on</div><div style='font-family:Plus Jakarta Sans,sans-serif;font-size:16px;font-weight:800;color:#fff;'>Google Play</div></div></a><a href='https://apps.apple.com/app/nolubz/id0000000000' style="display:inline-flex;align-items:center;gap:12px;background:#1a1a2e;border:1.5px solid rgba(255,255,255,.2);border-radius:14px;padding:13px 22px;text-decoration:none;transition:transform .15s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'"><svg width='18' height='22' viewBox='0 0 22 26' fill='white'><path d='M18.07 13.72c-.03-3.26 2.66-4.84 2.78-4.91-1.52-2.22-3.88-2.52-4.71-2.55-2-.21-3.93 1.18-4.95 1.18-1.03 0-2.6-1.16-4.28-1.13C4.7 6.35 2.6 7.5 1.44 9.38c-2.34 4.05-.6 10.03 1.67 13.31 1.12 1.61 2.44 3.41 4.17 3.35 1.68-.07 2.31-1.08 4.34-1.08 2.02 0 2.59 1.08 4.36 1.05 1.8-.03 2.95-1.63 4.04-3.25 1.29-1.85 1.81-3.67 1.83-3.76-.04-.02-3.76-1.44-3.78-5.28zM14.78 4.3C15.7 3.18 16.32 1.62 16.14 0c-1.37.06-3.07.93-4.04 2.02-.87.97-1.65 2.56-1.45 4.06 1.54.12 3.12-.78 4.13-1.78z'/></svg><div style='text-align:left'><div style='font-size:10px;color:rgba(255,255,255,.5);'>Download on the</div><div style='font-family:Plus Jakarta Sans,sans-serif;font-size:16px;font-weight:800;color:#fff;'>App Store</div></div></a></div><p style='font-size:12px;color:rgba(255,255,255,.25);margin-top:20px;'>Free to download · Android &amp; iOS · Launching soon</p></div></section><section class="cta-band">
-  <div class="wrap reveal">
-    <h2>Your global wallet awaits.</h2>
-    <p>Join the waitlist and be among the first to open your NOLZ Wallet when Nolubz launches in your country.</p>
-    <a href="../index.html#waitlist" class="btn-blue">Join the Waitlist →</a>
-  </div>
-</section>
+<section class="download-strip" style="padding:60px 5%;background:linear-gradient(135deg,#080E1A,#0D2B6B);text-align:center;"><div style="max-width:800px;margin:0 auto;"><p style="font-family:Plus Jakarta Sans,sans-serif;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#90CAF9;margin-bottom:12px;">GET THE APP</p><h2 style="font-family:Plus Jakarta Sans,sans-serif;font-size:clamp(24px,3.5vw,40px);font-weight:800;color:#fff;letter-spacing:-1px;margin-bottom:16px;">The full Nolubz experience<br>is in your pocket.</h2><p style="font-size:15px;color:rgba(255,255,255,.5);margin-bottom:32px;line-height:1.75;">Send money, save, protect deals and pay bills — all from one beautifully designed app. Available on Android &amp; iOS.</p><div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;"><a href='https://play.google.com/store/apps/details?id=com.nolubz.app' style="display:inline-flex;align-items:center;gap:12px;background:#1a1a2e;border:1.5px solid rgba(255,255,255,.2);border-radius:14px;padding:13px 22px;text-decoration:none;transition:transform .15s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'"><svg width='20' height='20' viewBox='0 0 24 24' fill='white'><path d='M3.18 23.5c.34.19.72.25 1.09.19L15.5 12 4.27.31A1.83 1.83 0 003.18.5C2.46.91 2 1.7 2 2.56v18.88c0 .86.46 1.65 1.18 2.06z'/></svg><div style='text-align:left'><div style='font-size:10px;color:rgba(255,255,255,.5);'>Get it on</div><div style='font-family:Plus Jakarta Sans,sans-serif;font-size:16px;font-weight:800;color:#fff;'>Google Play</div></div></a><a href='https://apps.apple.com/app/nolubz/id0000000000' style="display:inline-flex;align-items:center;gap:12px;background:#1a1a2e;border:1.5px solid rgba(255,255,255,.2);border-radius:14px;padding:13px 22px;text-decoration:none;transition:transform .15s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'"><svg width='18' height='22' viewBox='0 0 22 26' fill='white'><path d='M18.07 13.72c-.03-3.26 2.66-4.84 2.78-4.91-1.52-2.22-3.88-2.52-4.71-2.55-2-.21-3.93 1.18-4.95 1.18-1.03 0-2.6-1.16-4.28-1.13C4.7 6.35 2.6 7.5 1.44 9.38c-2.34 4.05-.6 10.03 1.67 13.31 1.12 1.61 2.44 3.41 4.17 3.35 1.68-.07 2.31-1.08 4.34-1.08 2.02 0 2.59 1.08 4.36 1.05 1.8-.03 2.95-1.63 4.04-3.25 1.29-1.85 1.81-3.67 1.83-3.76-.04-.02-3.76-1.44-3.78-5.28zM14.78 4.3C15.7 3.18 16.32 1.62 16.14 0c-1.37.06-3.07.93-4.04 2.02-.87.97-1.65 2.56-1.45 4.06 1.54.12 3.12-.78 4.13-1.78z'/></svg><div style='text-align:left'><div style='font-size:10px;color:rgba(255,255,255,.5);'>Download on the</div><div style='font-family:Plus Jakarta Sans,sans-serif;font-size:16px;font-weight:800;color:#fff;'>App Store</div></div></a></div><p style='font-size:12px;color:rgba(255,255,255,.25);margin-top:20px;'>Free to download · Android &amp; iOS · Launching soon</p></div></section><section class="cta-band"><div class="wrap reveal"><h2>Security you can trust.</h2><p>Join thousands of people worldwide who are building their financial future on Nolubz.</p><a href="https://app.nolubz.com" class="btn-blue">Launch App →</a></div></section>
 
 <footer aria-label="Site footer">
   <div class="wrap">
     <div class="footer-main">
       <div class="footer-brand-col">
-        <a href="../index.html" class="fb" aria-label="Nolubz home">
-          <img src="../NLogo.png" alt="Nolubz" width="30" height="30" loading="lazy"/>
+        <a href="index.html" class="fb" aria-label="Nolubz home">
+          <img src="NLogo.png" alt="Nolubz" width="30" height="30" loading="lazy"/>
           <span class="fb-txt">Nolubz</span>
         </a>
         <p class="fd">Send, receive, save and secure —<br>anywhere in the world.</p>
@@ -332,25 +246,25 @@
           <a href="https://t.me/nolubz" aria-label="Telegram">✈</a>
         </div>
         <div class="fbot-links">
-          <a href="../contact.html">Contact</a>
+          <a href="contact.html">Contact</a>
           <span class="fbot-sep">·</span>
-          <a href="../privacy.html">Privacy</a>
+          <a href="privacy.html">Privacy</a>
         </div>
       </div>
       <div class="footer-links-grid">
         <div class="fcol">
           <h4>Products</h4>
-          <a href="../products/wallet.html">NOLZ Wallet</a>
-          <a href="../products/xecro.html">Xecro Escrow</a>
-          <a href="../products/arqasave.html">ArqaSave</a>
-          <a href="../products/bills.html">Bills &amp; Airtime</a>
+          <a href="products/wallet.html">NOLZ Wallet</a>
+          <a href="products/xecro.html">Xecro Escrow</a>
+          <a href="products/arqasave.html">ArqaSave</a>
+          <a href="products/bills.html">Bills &amp; Airtime</a>
         </div>
         <div class="fcol">
           <h4>Platform</h4>
-          <a href="../countries.html">Countries</a>
-          <a href="../security.html">Security</a>
-          <a href="../faq.html">FAQ</a>
-          <a href="../about.html">About</a>
+          <a href="countries.html">Countries</a>
+          <a href="security.html">Security</a>
+          <a href="faq.html">FAQ</a>
+          <a href="about.html">About</a>
         </div>
       </div>
     </div>
@@ -359,16 +273,12 @@
     </div>
   </div>
 </footer>
-
 <script>
   window.addEventListener('scroll',()=>document.getElementById('mainNav').classList.toggle('scrolled',scrollY>20),{passive:true});
   document.getElementById('menuBtn').onclick=()=>document.getElementById('mobMenu').classList.add('open');
   document.getElementById('mobClose').onclick=()=>document.getElementById('mobMenu').classList.remove('open');
   const ro=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');ro.unobserve(x.target);}}),{threshold:0.1});
-  document.querySelectorAll('.reveal,.rl,.rr').forEach(el=>ro.observe(el));
-  function tf(btn){const item=btn.parentElement;const isOpen=item.classList.contains('open');document.querySelectorAll('.fitem.open').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open');}
-  let bv=0;const be=document.getElementById('wmBal');
-  const bi=setInterval(()=>{bv=Math.min(bv+1380/60,1380);be.textContent='$'+bv.toFixed(2);if(bv>=1380)clearInterval(bi);},28);
+  document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 </script>
 </body>
 </html>
