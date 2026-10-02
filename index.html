@@ -588,7 +588,7 @@
 
   <div class="hero-badge" role="status">
     <span class="bdot"></span>
-    Now live in 40+ countries — join the waitlist
+    Now live in 86+ countries — start for free
   </div>
 
   <h1>
@@ -898,7 +898,7 @@
             </div>
           </a>
         </div>
-        <p class="dl-note">Available on Android & iOS · Free to download · Launching soon</p>
+        <p class="dl-note">Available on Android & iOS · Free to download</p>
       </div>
       <div class="dl-visual" aria-hidden="true">
         <div class="dl-phone">
@@ -1035,6 +1035,23 @@
     }catch{btn.disabled=false;btn.textContent='Join the Waitlist →';alert('Something went wrong. Please email support@nolubz.com');}
   });
 </script>
-<script src="https://nolubz-chat.nolubz.com/widget.js"></script>
+<script>
+(function() {
+  if (document.getElementById('nolubz-chat-widget')) return;
+  var ctx = window.location.hostname === 'app.nolubz.com' ? 'app' : 'visitor';
+  var chatUrl = 'https://nolubz-chat.nolubz.com?ctx=' + ctx;
+  var btn = document.createElement('div');
+  btn.id = 'nolubz-chat-widget';
+  btn.innerHTML = '&#x1F4AC;';
+  btn.title = 'Chat with Nolubz Assistant';
+  btn.style.cssText = 'position:fixed;bottom:28px;right:28px;width:56px;height:56px;background:#1565C0;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;cursor:pointer;box-shadow:0 4px 20px rgba(21,101,192,.5);z-index:2147483647;transition:transform .2s';
+  btn.onmouseenter = function() { btn.style.transform = 'scale(1.1)'; };
+  btn.onmouseleave = function() { btn.style.transform = 'scale(1)'; };
+  btn.onclick = function() {
+    window.open(chatUrl, 'NolubzChat', 'width=420,height=600,resizable=yes,scrollbars=yes');
+  };
+  document.body.appendChild(btn);
+})();
+</script>
 </body>
 </html>
